@@ -1,0 +1,156 @@
+a{
+    text-decoration: none;
+}
+/*               About                   */
+.about {
+}
+.about__body {
+    max-width: 823px;
+    margin:36px auto;
+}
+.about__header {
+    margin : 0px 0px 65px 0px;
+}
+.about__title {
+    margin: 0px 0px 30px 0px;
+}
+.about__text {
+    font-size: 14px;
+    color: #868585;
+    font-weight: 300;
+    font-family: "Lato";
+    text-align: center;
+    line-height: 26px;
+    margin: 0px auto;
+}
+.about__row {
+    display:flex;
+    margin: 0px -15px;
+    justify-content: center;
+}
+.about__column {
+    padding: 0px 15px;
+    flex: 0 0 33.333%;
+}
+
+/* Title */
+.title {
+    font-size: 34px;
+    font-weight: 700;
+    font-family: "Lato";
+    text-transform: uppercase;
+    letter-spacing: 8.95px;
+    position:relative;
+    text-align: center;
+    padding: 0px 0px 30px 0px;
+}
+.title:after{
+    content:'';
+    display: flex;
+    justify-content: center;
+    margin:0px auto;
+    width: 81px;
+    height: 1px;
+    background-color: #000000;
+}
+/* Item about*/
+.item-about__icon {
+    margin:0px auto 40px auto;
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+    border: 2px solid #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item-about__title {
+    text-align:center;
+    color:black;
+    font-size:22px;
+    text-transform: uppercase;
+    letter-spacing: 3.52px;
+    margin:0px 0px 35px 0px;
+}
+.item-about__text {
+    text-align:center;
+    color:#868585;
+    font-size:14px;
+    font-weight: 300;
+    line-height: 26px;
+    font-family: "Lato";
+}
+/*               Portfolio                   */
+.portfolio {
+}
+.portfolio__body {
+    margin:0px auto;
+    padding:100px 0px;
+    background-color: #f3f3f3;
+}
+/* Header */
+.portfolio__header {
+}
+.portfolio__title {
+    margin:0px 0px 30px 0px;
+}
+.portfolio__menu {
+    display: flex;
+    justify-content: center;
+}
+.menu {
+}
+.item-menu-portfolio {
+    margin:0px 20px;
+    
+}
+.item-menu-portfolio__link{
+    color: #ada074;
+    
+}
+.item-menu {
+    font-size: 15px;
+    font-weight: 700;
+    font-family: "Lato";
+    text-transform: uppercase;
+}
+/* Portfolio midle grade*/
+.portfolio__row {
+    margin:130px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.portfolio__column {
+    display: flex;
+    flex-direction: column;
+}
+.item-portfolio {
+    width: 537px;   
+    height: 363px;
+    background-color: #eaeaea;
+    margin: 8px 13px;
+
+}
+
+.portfolio__buttom {
+    display: flex;
+    margin:60px auto;
+    justify-content: center;
+}
+
+.portfolio__readmore {
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Lato";
+    border: 1px solid black;
+    text-align: center;
+    width: 182px;
+    padding: 20px 0px;
+    text-transform: uppercase;
+}
+
+
+
