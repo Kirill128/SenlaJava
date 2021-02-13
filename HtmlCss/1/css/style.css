@@ -76,18 +76,25 @@ a{
     
 }
 .sidebar__item {
-    
+    position: relative;
 }
 .sidebar__item:hover .item-sidebar__hidden-list{
     visibility: visible;
     /*transform: scaleY(1);*/
+    display: grid;
+    grid-auto-flow: row;
 }
 .item-sidebar__header {
 }
 .item-sidebar__hidden-list {
-    visibility: hidden;
+    display: none;
     /*transform: scaleY(1);*/
 }
+.item-sidebar__hidden-list li {
+    position: relative;
+    /*transform: scaleY(1);*/
+}
+
 .products {
     background-color: green;
 }
