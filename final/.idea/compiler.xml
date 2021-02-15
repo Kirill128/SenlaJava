@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="final-api" />
+        <module name="final-dao" />
+        <module name="final-main" />
+        <module name="final-entity" />
+        <module name="final-rest" />
+        <module name="final-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="final" target="1.8" />
+      <module name="final-api" target="1.8" />
+      <module name="final-dao" target="1.8" />
+      <module name="final-entity" target="1.8" />
+      <module name="final-main" target="1.8" />
+      <module name="final-rest" target="1.8" />
+      <module name="final-service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="final-api" options="-parameters" />
+      <module name="final-dao" options="-parameters" />
+      <module name="final-entity" options="-parameters" />
+      <module name="final-main" options="-parameters" />
+      <module name="final-rest" options="-parameters" />
+      <module name="final-service" options="-parameters" />
+    </option>
+  </component>
+</project>
