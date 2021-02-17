@@ -1,0 +1,53 @@
+body{
+    background-color: #e6e6fa;
+    display: grid;
+    grid-template: minmax(40px,auto) 1fr minmax(40px,auto)/1fr;
+}
+.title{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 5px;
+}
+.container{
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    margin:30px;
+}
+.container__body {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr;
+}
+.container__login {
+}
+.container__title {
+    font-weight: 700;
+}
+.container__input {
+    padding: 10px;
+    border:1px solid blue;
+    border-radius: 6px;
+    box-shadow:1px 1px  gray;
+}
+.input-login {
+}
+.input-login__title {
+}
+
+.input-passwd {
+}
+.input-passwd__title {
+}
+.container__button {
+    font-size: 15px;
+    margin:10px 0px 0px 0px;
+    padding:5px 15px;
+    border:1px solid gray;
+    border-radius: 10px;
+}
+.container__signup {
+}
+.input-email {
+}
+.input-email__title {
+}
