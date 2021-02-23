@@ -1,0 +1,35 @@
+<?xml-version="1.0"?>
+<body>
+    
+    <books>
+        <book>
+            <name>Властелин колец</name>
+            <author>Джон Р. Р. Толкин</author>
+            <price>120</price>
+            <year>2000</year>
+            <raiting>10.0</raiting>
+        </book>
+        <book>
+            <name>Мастер и Маргарита</name>
+            <author>Михаил Булгаков</author>
+            <price>20</price>
+            <year>2000</year>
+            <raiting>9.1</raiting>
+        </book>
+        <book>
+            <name>Преступление и наказание</name>
+            <author>Федор Михайлович Достоевский</author>
+            <price>5</price>
+            <year>2000</year>
+            <raiting>5.6</raiting>
+        </book>
+        <book>
+            <name>Маленький принц</name>
+            <author>Антуан де Сент-Экзюпери</author>
+            <price>10</price>
+            <year>2000</year>
+            <raiting>8.8</raiting>
+        </book>
+    </books>
+
+</body>

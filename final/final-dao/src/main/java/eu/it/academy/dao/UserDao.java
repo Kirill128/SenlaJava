@@ -1,6 +1,8 @@
 package eu.it.academy.dao;
 
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+
 import eu.it.academy.api.dao.IUserDao;
 import eu.it.academy.entities.User;
 

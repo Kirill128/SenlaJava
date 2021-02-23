@@ -1,25 +1,52 @@
 package com.it.academy.entitys;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import lombok.experimental.SuperBuilder;
 
 import javax.persistence.*;
+import java.util.List;
 
-@Getter
-@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
+@SuperBuilder
 @Table(name="users")
 public class UserEntity extends AEntity<Integer>{
+
     @Column(name="name")
     private String name;
 
+    @Column(name="email")
+    private String email;
 
-    @Column(name="pet_id")
-    private Integer petId;
+    @OneToMany(mappedBy = "user",fetch = FetchType.LAZY,cascade = CascadeType.PERSIST,orphanRemoval = true)
+    private List<PetEntity> pets;
+
+
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public List<PetEntity> getPets() {
+        return pets;
+    }
+
+    public void setPets(List<PetEntity> pets) {
+        this.pets.clear();
+        this.pets.addAll(pets);
+    }
 
 }

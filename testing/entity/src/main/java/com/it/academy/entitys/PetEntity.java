@@ -1,9 +1,6 @@
 package com.it.academy.entitys;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import lombok.experimental.SuperBuilder;
 
 import javax.persistence.*;
@@ -13,12 +10,14 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
+@SuperBuilder
 @Table(name="pets")
 public class PetEntity extends AEntity<Integer>{
     @Column(name="name")
     private String name;
 
-    @Column(name="user_id")
-    private Integer petId;
+    @ManyToOne(fetch = FetchType.EAGER  )
+    @JoinColumn(name="user_id",referencedColumnName = "id")
+    private UserEntity user;
 
 }

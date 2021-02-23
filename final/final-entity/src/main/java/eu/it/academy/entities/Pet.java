@@ -25,7 +25,7 @@ public class Pet extends AEntity<Integer> {
     @Column(name = "nickname")
     private String nickName;
     
-//    @ManyToOne(fetch = FetchType.LAZY)
-//    @JoinColumn(name = "user_id", referencedColumnName = "id")
-//    private User user;
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "user_id", referencedColumnName = "id")
+    private User user;
 }

@@ -1,7 +1,13 @@
 package eu.it.academy.dao;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.TypedQuery;
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Root;
 
 import eu.it.academy.api.dao.IAGenericDao;
 import eu.it.academy.entities.AEntity;
@@ -22,7 +28,7 @@ public abstract class AGenericDao<T extends AEntity<Integer>> implements IAGener
         return entity;
     }
 
-    public T get(Long id) {
+    public T get(int id) {
         return entityManager.find(getGenericClass(), id);
     }
     
@@ -35,6 +41,15 @@ public abstract class AGenericDao<T extends AEntity<Integer>> implements IAGener
         entityManager.remove(entity);
     }
 
+    public List<T> getAll() {
+        CriteriaBuilder builder = entityManager.getCriteriaBuilder();
+        CriteriaQuery<T> query = builder.createQuery(getGenericClass());
+        Root<T> root = query.from(getGenericClass());
+        query.select(root);
+        TypedQuery<T> result = entityManager.createQuery(query);
+        return result.getResultList();
+    }
+    
     public Class<T> getGenericClass() {
         return this.clazz;
     }

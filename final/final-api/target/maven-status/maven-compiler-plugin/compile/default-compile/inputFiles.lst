@@ -1,2 +1,10 @@
+C:\Users\user\eclipse-workspace\final\final-api\src\main\java\eu\it\academy\api\dao\IUserJPADao.java
 C:\Users\user\eclipse-workspace\final\final-api\src\main\java\eu\it\academy\api\dao\IUserDao.java
+C:\Users\user\eclipse-workspace\final\final-api\src\main\java\eu\it\academy\api\mappers\UserMapper.java
+C:\Users\user\eclipse-workspace\final\final-api\src\main\java\eu\it\academy\api\dao\IPetDao.java
+C:\Users\user\eclipse-workspace\final\final-api\src\main\java\eu\it\academy\api\dto\UserDto.java
+C:\Users\user\eclipse-workspace\final\final-api\src\main\java\eu\it\academy\api\services\IPetService.java
 C:\Users\user\eclipse-workspace\final\final-api\src\main\java\eu\it\academy\api\services\IUserService.java
+C:\Users\user\eclipse-workspace\final\final-api\src\main\java\eu\it\academy\api\dao\IAGenericDao.java
+C:\Users\user\eclipse-workspace\final\final-api\src\main\java\eu\it\academy\api\dto\PetDto.java
+C:\Users\user\eclipse-workspace\final\final-api\src\main\java\eu\it\academy\api\mappers\PetMapper.java
