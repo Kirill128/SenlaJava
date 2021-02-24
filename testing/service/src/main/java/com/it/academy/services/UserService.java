@@ -37,7 +37,7 @@ public class UserService implements IUserService{
         if(userFromBase!=null)
         {
             if(user.getEmail()!=null)userFromBase.setEmail(user.getEmail());
-            if(user.getName()!=null)userFromBase.setEmail(user.getName());
+            if(user.getName()!=null)userFromBase.setName(user.getName());
             this.userDao.update(userFromBase);
         }
     }

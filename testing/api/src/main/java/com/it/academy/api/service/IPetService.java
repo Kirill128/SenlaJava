@@ -1,7 +1,7 @@
 package com.it.academy.api.service;
 
 import com.it.academy.api.dto.PetEntityDto;
-import com.sun.tools.javac.util.List;
+import java.util.List;
 
 public interface IPetService {
     PetEntityDto getPet(int id);
