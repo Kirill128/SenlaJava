@@ -41,6 +41,7 @@ public class UserController {
 
     @PatchMapping
     public void assignPetsToUser(@RequestBody UserPetEntitysIdsDto ids){
+
         this.userService.assignPetsToUser(ids);
     }
 }

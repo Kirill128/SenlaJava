@@ -6,12 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="efd1e193-0903-4180-b51d-01166ecafdc5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/final-service/src/main/java/eu/it/academy/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/final-service/src/main/java/eu/it/academy/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testing/api/src/main/java/com/it/academy/api/dto/PetsUserEntityIdsDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../testing/api/src/main/java/com/it/academy/api/dto/UserPetEntitysIdsDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testing/api/src/main/java/com/it/academy/api/dto/UserPetEntitysIdesDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../testing/api/src/main/java/com/it/academy/api/dto/UserPetEntityIdsDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testing/api/src/main/java/com/it/academy/api/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../testing/api/src/main/java/com/it/academy/api/service/IUserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../testing/entity/src/main/java/com/it/academy/entitys/PetEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../testing/entity/src/main/java/com/it/academy/entitys/PetEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testing/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../testing/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../testing/rest/src/main/java/com/it/academy/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../testing/rest/src/main/java/com/it/academy/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testing/service/src/main/java/com/it/academy/services/PetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../testing/service/src/main/java/com/it/academy/services/PetService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../testing/service/src/main/java/com/it/academy/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../testing/service/src/main/java/com/it/academy/services/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +29,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../testing" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
