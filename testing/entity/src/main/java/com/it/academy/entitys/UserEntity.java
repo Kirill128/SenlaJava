@@ -19,7 +19,7 @@ public class UserEntity extends AEntity<Integer>{
     @Column(name="email")
     private String email;
 
-    @OneToMany(mappedBy = "user",fetch = FetchType.LAZY,cascade = CascadeType.PERSIST,orphanRemoval = true)
+    @OneToMany(mappedBy = "user",fetch = FetchType.LAZY,cascade = CascadeType.ALL,orphanRemoval = true)
     private List<PetEntity> pets;
 
 

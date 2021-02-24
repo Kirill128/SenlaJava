@@ -1,24 +1,32 @@
 package com.it.academy.services;
 
+import com.it.academy.api.dao.IPetDao;
 import com.it.academy.api.dao.IUserDao;
-import com.it.academy.api.dto.PetsUserEntityIdsDto;
+import com.it.academy.api.dto.PetEntityDto;
+import com.it.academy.api.dto.UserPetEntitysIdsDto;
 import com.it.academy.api.dto.UserEntityDto;
 import com.it.academy.api.mappers.UserEntityMapper;
-import com.it.academy.api.dto.UserPetEntitysIdesDto;
+import com.it.academy.api.dto.UserPetEntityIdsDto;
 import com.it.academy.api.service.IUserService;
+import com.it.academy.entitys.PetEntity;
 import com.it.academy.entitys.UserEntity;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
 @Service
 public class UserService implements IUserService{
 
+    @Autowired
     private IUserDao userDao;
+    @Autowired
+    private IPetDao petDao;
 
-    public UserService(IUserDao userDao){
-        this.userDao=userDao;
-    }
+//    public UserService(IUserDao userDao){
+//        this.userDao=userDao;
+//    }
 
     @Override
     public UserEntityDto findUser(int id) {
@@ -27,11 +35,13 @@ public class UserService implements IUserService{
     }
 
     @Override
+    @Transactional
     public UserEntityDto createUser(UserEntityDto user) {
         return UserEntityMapper.mapUserEntityDto(this.userDao.create(UserEntityMapper.mapUserEntity(user)));
     }
 
     @Override
+    @Transactional
     public void updateUser(int id, UserEntityDto user) {
         UserEntity userFromBase=this.userDao.get(id);
         if(userFromBase!=null)
@@ -43,6 +53,7 @@ public class UserService implements IUserService{
     }
 
     @Override
+    @Transactional
     public void deleteUser(int id) {
         UserEntityDto userDto=this.findUser(id);
         if(userDto!=null)this.userDao.delete(UserEntityMapper.mapUserEntity(userDto));
@@ -54,13 +65,28 @@ public class UserService implements IUserService{
     }
 
     @Override
-    public void assignPetToUser(UserPetEntitysIdesDto ids) {
+    @Transactional
+    public void assignPetToUser(UserPetEntityIdsDto ids) {
 
     }
 
     @Override
-    public void assignPetsToUser(PetsUserEntityIdsDto ids) {
-        
+    @Transactional
+    public void assignPetsToUser(UserPetEntitysIdsDto ids) {
+        UserEntity user=this.userDao.get(ids.getUserId());
+        if(user!=null) {
+            for (int petId :
+                    ids.getPetIds()) {
+                PetEntity pet = this.petDao.get(petId);
+                if (pet != null) {
+                    user.getPets().add(pet);
+
+                }
+                System.out.printf("pet "+petId);
+            }
+            this.userDao.update(user);
+
+        }
     }
 
 

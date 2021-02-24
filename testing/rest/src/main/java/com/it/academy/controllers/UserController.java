@@ -1,6 +1,7 @@
 package com.it.academy.controllers;
 
 import com.it.academy.api.dto.UserEntityDto;
+import com.it.academy.api.dto.UserPetEntitysIdsDto;
 import com.it.academy.api.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -39,7 +40,7 @@ public class UserController {
     }
 
     @PatchMapping
-    public void assignPetToUser(){
-
+    public void assignPetsToUser(@RequestBody UserPetEntitysIdsDto ids){
+        this.userService.assignPetsToUser(ids);
     }
 }

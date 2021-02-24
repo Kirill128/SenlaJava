@@ -36,7 +36,7 @@ public class UserService implements IUserService {
     }
         
     @Override
-    public UserDto createUser(UserDto userDto) {
+    public UserDto createUser(UserDto userDto) {}
         return UserMapper.mapUserDto(this.userJPADao.save(UserMapper.mapUser(userDto)));
     }
 

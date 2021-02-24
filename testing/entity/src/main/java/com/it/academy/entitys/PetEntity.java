@@ -17,7 +17,7 @@ public class PetEntity extends AEntity<Integer>{
     private String name;
 
     @ManyToOne(fetch = FetchType.EAGER  )
-    @JoinColumn(name="user_id",referencedColumnName = "id")
+    @JoinColumn(name="user_id")
     private UserEntity user;
 
 }
