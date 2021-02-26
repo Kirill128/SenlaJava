@@ -18,6 +18,6 @@ import javax.persistence.*;
 public abstract class AEntity<T> {
     @Id
     @Column(name="id")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     protected T id;
 }

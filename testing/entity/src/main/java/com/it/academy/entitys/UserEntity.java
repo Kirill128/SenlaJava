@@ -22,8 +22,6 @@ public class UserEntity extends AEntity<Integer>{
     @OneToMany(mappedBy = "user",fetch = FetchType.LAZY,cascade = CascadeType.ALL,orphanRemoval = true)
     private List<PetEntity> pets;
 
-
-
     public String getName() {
         return name;
     }
