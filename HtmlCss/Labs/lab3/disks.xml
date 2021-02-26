@@ -1,0 +1,43 @@
+<?xml-version="1.0"?>
+<note xmlns="http://msiter.ru"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://msiter.ru disks.xsd">
+    <body>
+        <library>
+            <disks>
+                <disk>
+                    <author>Vana Mishev</author>
+                    <name>Under the sea</name>
+                    <cost>202.4</cost>
+                    <size>Midle</size>
+                    <year>2000</year>
+                    <raiting>6.4<raiting>
+                </disk>
+                <disk>
+                    <author>Vana Mishev</author>
+                    <name>Under the sea</name>
+                    <cost>202.4</cost>
+                    <size>Midle</size>
+                    <year>2000</year>
+                    <raiting>6.4<raiting>
+                </disk>
+                <disk>
+                    <author>Vana Mishev</author>
+                    <name>Under the sea</name>
+                    <cost>202.4</cost>
+                    <size>Midle</size>
+                    <year>2000</year>
+                    <raiting>6.4<raiting>
+                </disk>
+                <disk>
+                    <author>Vana Mishev</author>
+                    <name>Under the sea</name>
+                    <cost>202.4</cost>
+                    <size>Midle</size>
+                    <year>2000</year>
+                    <raiting>6.4<raiting>
+                </disk>
+            </disks>
+        </library>
+    </body>
+</note>
