@@ -12,7 +12,6 @@ import java.util.List;
 @SuperBuilder
 @Table(name="users")
 public class UserEntity extends AEntity<Integer>{
-
     @Column(name="name")
     private String name;
 
