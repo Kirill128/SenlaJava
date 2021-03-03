@@ -53,5 +53,4 @@ public class User extends AEntity<Integer> {
         this.pets.clear();
         this.pets.addAll(pets);
     }
-    
 }

@@ -1,0 +1,22 @@
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<title>Users page</title>
+<link href="styles/styles.css" rel="stylesheet" />
+<!-- 
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+ -->
+</head>
+<body>
+
+	<div>
+		<h2>Add user</h2>
+	</div>
+	<div class = "user-wrapper">
+		<form action="#" th:action="@{add}" th:object="${user}" method="post">
+			<input id="firstName" type="text" th:field="*{firstName}" required/>
+			<input id="salary" type="text" th:field="*{salary}" required/>
+			<input type="submit" value="Submit"/>
+		</form>
+	</div>
+</body>
+</html>

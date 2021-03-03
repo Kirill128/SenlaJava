@@ -1,9 +1,0 @@
-
-W
-java:S2259A"AA "NullPointerException" could be thrown; "pet" is nullable here.(èíú¿
-N
-java:S1128"8Remove this unused import 'java.util.function.Supplier'.(†ïÿ‘
-V	java:S125,"<This block of commented-out lines of code should be removed.(§ïòþÿÿÿÿ
-M
-java:S1135,"2Complete the task associated to this TODO comment.(§ïòþÿÿÿÿ
-Q	java:S125N"<This block of commented-out lines of code should be removed.(…—ã

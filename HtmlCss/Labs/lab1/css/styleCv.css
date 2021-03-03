@@ -1,13 +1,53 @@
+
+body{
+
+}
+a{
+    text-decoration: none;
+    color:white;
+
+}
+li{
+    list-style: none;
+}
+
 .container{
-    background-color: black;
+    max-width: 1400px;
+    display: grid;
+    grid-template: minmax(40px,auto) 1fr minmax(40px,auto) /1fr;
 }
-.container-item{
-    margin: 10px;
-    padding: 10px;
+/*          Head            */
+
+.container__head {
+    position: sticky;
+    top:5px;
+    border-radius: 15px;
+    background-color: #2f4f4f;
 }
+.head__menu {
+}
+.head__menu ul{
+    display: flex;
+    justify-content: center;
+    orientation: row;
+}
+.head__menu li {
+    padding: 4px 15px ;
+    font-size: 25px;
+}
+
+/*          Body            */
 .container__body {
     display: grid;
     grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr;
+}
+
+.container-item{
+    margin: 10px;
+    padding: 10px;
+    background-color: #fededede;
+    border-radius: 10px;
+    font-size: 20px;
 }
 .container__about {
     grid-row: 1/2;
@@ -40,4 +80,13 @@
 }
 .container__hobbys {
     grid-row: 4/5;
+}
+/*          Footer          */
+.container__footer {
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+.footer__text {
+    font-size: 16px;
+    text-align: center;
 }

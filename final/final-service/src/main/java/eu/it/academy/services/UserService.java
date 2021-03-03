@@ -1,11 +1,8 @@
 package eu.it.academy.services;
 
 import java.util.List;
-import java.util.function.Supplier;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import eu.it.academy.api.dao.IPetJPADao;
 import eu.it.academy.api.dao.IUserJPADao;
 import eu.it.academy.api.dto.UserDto;
@@ -14,8 +11,10 @@ import eu.it.academy.api.mappers.UserMapper;
 import eu.it.academy.api.services.IUserService;
 import eu.it.academy.entities.Pet;
 import eu.it.academy.entities.User;
+import lombok.extern.slf4j.Slf4j;
 
 @Service
+@Slf4j
 public class UserService implements IUserService {
 
     @Autowired
@@ -36,12 +35,12 @@ public class UserService implements IUserService {
     }
         
     @Override
-    public UserDto createUser(UserDto userDto) {}
+    public UserDto createUser(UserDto userDto) {
         return UserMapper.mapUserDto(this.userJPADao.save(UserMapper.mapUser(userDto)));
     }
 
     @Override
-    public void updateUser(int id, UserDto userDto) {//TODO: write update logic in If(){}
+    public void updateUser(int id, UserDto userDto) {
         User user = this.userJPADao.findById(id).orElse(null);
         if(user != null) {
             this.userJPADao.save(user);
@@ -64,9 +63,9 @@ public class UserService implements IUserService {
         Pet pet = this.petJPADao.findById(ids.getPetId()).orElse(null);
         pet.setUser(user);
         this.petJPADao.save(pet);
+        log.info("Pet assigned to user {}!", user.getFirstName());
     }
 
-    
     
     
     

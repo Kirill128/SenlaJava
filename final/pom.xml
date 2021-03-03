@@ -23,5 +23,6 @@
 		<module>final-rest</module>
 		<module>final-main</module>
 		<module>final-api</module>
+		<module>final-logger</module>
 	</modules>
 </project>
