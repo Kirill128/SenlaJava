@@ -45,7 +45,7 @@
     <orderEntry type="library" scope="RUNTIME" name="Maven: mysql:mysql-connector-java:8.0.22" level="project" />
     <orderEntry type="module" module-name="final-service" />
     <orderEntry type="module" module-name="final-dao" />
-    <orderEntry type="library" name="Maven: eu.it.academy.final:final-logger:0.0.1-SNAPSHOT" level="project" />
+    <orderEntry type="module" module-name="final-logger" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-thymeleaf:2.4.2" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:2.4.2" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:2.4.2" level="project" />
