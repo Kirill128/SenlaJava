@@ -1,9 +1,16 @@
-<?xml-version="1.0"?>
-<note xmlns="http://msiter.ru"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="http://msiter.ru disks.xsd">
-    <body>
-        <library>
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE disks[
+    <!ELEMENT note (disks)>
+    <!ELEMENT disks (disk+)>
+    <!ELEMENT disk (author,name,cost,size,year,raiting)>
+    <!ELEMENT author (#PCDATA)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT cost (#PCDATA)>
+    <!ELEMENT size (#PCDATA)>
+    <!ELEMENT year (#PCDATA)>
+    <!ELEMENT raiting (#PCDATA)>
+]>
+<?xml-model href="disks.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
             <disks>
                 <disk>
                     <author>Vana Mishev</author>
@@ -38,6 +45,3 @@ xsi:schemaLocation="http://msiter.ru disks.xsd">
                     <raiting>6.4<raiting>
                 </disk>
             </disks>
-        </library>
-    </body>
-</note>
