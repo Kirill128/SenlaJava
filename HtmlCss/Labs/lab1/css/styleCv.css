@@ -70,7 +70,10 @@ li{
 }
 .container__photo {
     grid-row: 1/2;
-
+}
+.container__photo img {
+    width: 100%;
+    height: auto;
 }
 .container__contacts {
     grid-row: 2/3;

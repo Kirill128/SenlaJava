@@ -1,159 +1,55 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-                <xs:complexType name="disk">
-                    <xs:sequence>    
-                        <xs:element name="author" type="xs:string"/>
-                        <xs:element name="name" type="xs:string"/>
-                        <xs:element name="cost" type="xs:decimal">
-                            <xs:simpleType>
-                                <xs:restriction base="xs:integer">
-                                    <xs:minInclusive value="0"/>
-                                </xs:restriction>
-                            </xs:simpleType>
-                        </xs:element>
-                        <xs:element name="size">
-                            <xs:simpleType>
-                                <xs:restriction base="xs:string">
-                                    <xs:enumeration value="Big"/>
-                                    <xs:enumeration value="Midle"/>
-                                    <xs:enumeration value="Litle"/>
-                                </xs:restriction>
-                            </xs:simpleType>
-                        </xs:element>
-                        <xs:element name="year" >
-                            <xs:simpleType>
-                                <xs:restriction base="xs:integer">
-                                    <xs:minInclusive value="0"/>
-                                    <xs:maxInclusive value="2021"/>
-                                </xs:restriction>
-                            </xs:simpleType>
-                        </xs:element>
-                        <xs:element name="raiting"/>
-                            <xs:simpleType>
-                                <xs:restriction base="xs:decimal">
-                                    <xs:minInclusive value="0"/>
-                                    <xs:maxInclusive value="10"/>
-                                </xs:restriction>
-                            </xs:simpleType>
-                        </xs:element>
+            <xs:element name="disks">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" ref="disk"/>
                     </xs:sequence>
                 </xs:complexType>
-                
-                <xs:complexType name="disk">
-                    <xs:sequence>    
-                        <xs:element name="author" type="xs:string"/>
-                        <xs:element name="name" type="xs:string"/>
-                        <xs:element name="cost" type="xs:decimal">
-                            <xs:simpleType>
-                                <xs:restriction base="xs:integer">
-                                    <xs:minInclusive value="0"/>
-                                </xs:restriction>
-                            </xs:simpleType>
-                        </xs:element>
-                        <xs:element name="size">
-                            <xs:simpleType>
-                                <xs:restriction base="xs:string">
-                                    <xs:enumeration value="Big"/>
-                                    <xs:enumeration value="Midle"/>
-                                    <xs:enumeration value="Litle"/>
-                                </xs:restriction>
-                            </xs:simpleType>
-                        </xs:element>
-                        <xs:element name="year" >
-                            <xs:simpleType>
-                                <xs:restriction base="xs:integer">
-                                    <xs:minInclusive value="0"/>
-                                    <xs:maxInclusive value="2021"/>
-                                </xs:restriction>
-                            </xs:simpleType>
-                        </xs:elemintegerent>
-                        <xs:element name="raiting"/>
-                            <xs:simpleType>
-                                <xs:restriction base="xs:decimal">
-                                    <xs:minInclusive value="0"/>
-                                    <xs:maxInclusive value="10"/>
-                                </xs:restriction>
-                            </xs:simpleType>
-                        </xs:element>
-                    </xs:sequence>
-                </xs:complexType>
+            </xs:element>
 
-                <xs:complexType name="disk">
+            <xs:element name="disk">
+                <xs:complexType>
                     <xs:sequence>    
                         <xs:element name="author" type="xs:string"/>
                         <xs:element name="name" type="xs:string"/>
-                        <xs:element name="cost" type="xs:decimal">
-                            <xs:simpleType>
-                                <xs:restriction base="xs:integer">
-                                    <xs:minInclusive value="0"/>
-                                </xs:restriction>
-                            </xs:simpleType>
-                        </xs:element>
-                        <xs:element name="size">
-                            <xs:simpleType>
-                                <xs:restriction base="xs:string">
-                                    <xs:enumeration value="Big"/>
-                                    <xs:enumeration value="Midle"/>
-                                    <xs:enumeration value="Litle"/>
-                                </xs:restriction>
-                            </xs:simpleType>
-                        </xs:element>
-                        <xs:element name="year" >
-                            <xs:simpleType>
-                                <xs:restriction base="xs:integer">
-                                    <xs:minInclusive value="0"/>
-                                    <xs:maxInclusive value="2021"/>
-                                </xs:restriction>
-                            </xs:simpleType>
-                        </xs:elemintegerent>
-                        <xs:element name="raiting"/>
-                            <xs:simpleType>
-                                <xs:restriction base="xs:decimal">
-                                    <xs:minInclusive value="0"/>
-                                    <xs:maxInclusive value="10"/>
-                                </xs:restriction>
-                            </xs:simpleType>
-                        </xs:element>
+                        <xs:element ref="cost"/>
+                        <xs:element ref="size"/>
+                        <xs:element ref="year"/>
+                        <xs:element ref="raiting"/>
                     </xs:sequence>
                 </xs:complexType>
-                
-                <xs:complexType name="disk">
-                    <xs:sequence>    
-                        <xs:element name="author" type="xs:string"/>
-                        <xs:element name="name" type="xs:string"/>
-                        <xs:element name="cost" type="xs:decimal">
-                            <xs:simpleType>
-                                <xs:restriction base="xs:integer">
-                                    <xs:minInclusive value="0"/>
-                                </xs:restriction>
-                            </xs:simpleType>
-                        </xs:element>
-                        <xs:element name="size">
-                            <xs:simpleType>
-                                <xs:restriction base="xs:string">
-                                    <xs:enumeration value="Big"/>
-                                    <xs:enumeration value="Midle"/>
-                                    <xs:enumeration value="Litle"/>
-                                </xs:restriction>
-                            </xs:simpleType>
-                        </xs:element>
-                        <xs:element name="year" >
-                            <xs:simpleType>
-                                <xs:restriction base="xs:integer">
-                                    <xs:minInclusive value="0"/>
-                                    <xs:maxInclusive value="2021"/>
-                                </xs:restriction>
-                            </xs:simpleType>
-                        </xs:elemintegerent>
-                        <xs:element name="raiting"/>
-                            <xs:simpleType>
-                                <xs:restriction base="xs:decimal">
-                                    <xs:minInclusive value="0"/>
-                                    <xs:maxInclusive value="10"/>
-                                </xs:restriction>
-                            </xs:simpleType>
-                        </xs:element>
-                    </xs:sequence>
-                </xs:complexType>
-           
+            </xs:element>
+            <xs:element name="cost">
+                <xs:simpleType>
+                    <xs:restriction base="xs:integer">
+                        <xs:minInclusive value="0"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="size">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="Big"/>
+                        <xs:enumeration value="Midle"/>
+                        <xs:enumeration value="Litle"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="year" >
+                <xs:simpleType>
+                    <xs:restriction base="xs:integer">
+                        <xs:minInclusive value="0"/>
+                        <xs:maxInclusive value="2021"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="raiting"/>
+                <xs:simpleType>
+                    <xs:restriction base="xs:decimal">
+                        <xs:minInclusive value="0"/>
+                        <xs:maxInclusive value="10"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
 </xs:schema>
