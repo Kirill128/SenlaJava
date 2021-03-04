@@ -12,6 +12,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class TwitReader implements ITwitReader {
+
     @Override
     public List<Twit> readTwits(String filePath) {
         List<Twit> twits =new LinkedList<>();

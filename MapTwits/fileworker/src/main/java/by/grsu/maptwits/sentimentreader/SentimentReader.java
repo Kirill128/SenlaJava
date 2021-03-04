@@ -9,6 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class SentimentReader implements ISentimentReader {
+
     @Override
     public Map<String, Double> readSentiments(String filePath) {
         Map<String,Double> sentiments=new HashMap<>();

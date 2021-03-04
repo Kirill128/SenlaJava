@@ -10,6 +10,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class StateReader implements IStatesReader {
+
     @Override
     public List<State> readStates(String filePath) {
         List<State> states =new LinkedList<>();

@@ -1,5 +1,6 @@
 package by.grsu.maptwits.statesservice;
 
+import by.grsu.maptwits.constants.Paths;
 import by.grsu.maptwits.fileworker.ISentimentReader;
 import by.grsu.maptwits.fileworker.ITwitReader;
 import by.grsu.maptwits.service.ITwitService;
@@ -10,31 +11,31 @@ import java.util.Map;
 
 public class TwitService implements ITwitService {
 
-    private ISentimentReader sentimentReader;
+    private Map<String,Double> sentimentMap;
     private ITwitReader twitReader;
 
-    public TwitService(ISentimentReader sentimentReader, ITwitReader twitReader) {
-        this.sentimentReader = sentimentReader;
+    public TwitService(Map<String,Double> sentimentMap, ITwitReader twitReader) {
+        this.sentimentMap = sentimentMap;
         this.twitReader = twitReader;
     }
 
     @Override
-    public List<Twit> getAllTwits() {
-//        Map<String,Double> map=sentimentReader.readSentiments("/home/kirill/Programming/SenlaJava/MapTwits/fileworker/src/main/resources/sentiments.csv");
-//        for(Map.Entry<String,Double> entry : map.entrySet()) System.out.println(entry);
-        twitReader.readTwits("/home/kirill/Programming/SenlaJava/MapTwits/fileworker/src/main/resources/high_school_tweets2014.txt").stream().forEach(System.out::println);
-        return null;
+    public List<Twit> getAllTwitsWithSentiment() {
+        List<Twit> twits=twitReader.readTwits(Paths.TWITS_PATH.getValue());
+        double sentiment;
+        for(Twit t:twits){
+            sentiment=0;
+            for(String s:t.getWords()){
+                sentiment+=this.sentimentMap.getOrDefault(s,0.0);
+            }
+            t.setSentiment(sentiment);
+        }
+
+        return twits;
     }
 
     //               Getters & Setters
 
-    public ISentimentReader getSentimentReader() {
-        return sentimentReader;
-    }
-
-    public void setSentimentReader(ISentimentReader sentimentReader) {
-        this.sentimentReader = sentimentReader;
-    }
 
     public ITwitReader getTwitReader() {
         return twitReader;

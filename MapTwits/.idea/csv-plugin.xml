@@ -3,6 +3,13 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
+        <entry key="/fileworker/src/main/java/by/grsu/maptwits/twitreader/TwitReader.java">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/fileworker/src/main/resources/sentiments.csv">
           <value>
             <Attribute>

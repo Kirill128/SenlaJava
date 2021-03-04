@@ -1,5 +1,6 @@
 package statesservice;
 
+import by.grsu.maptwits.constants.Paths;
 import by.grsu.maptwits.sentimentreader.SentimentReader;
 import by.grsu.maptwits.statesservice.TwitService;
 import by.grsu.maptwits.twitreader.TwitReader;
@@ -31,8 +32,8 @@ public void after() throws Exception {
 */ 
 @Test
 public void testGetAllTwits() throws Exception {
-    TwitService service=new TwitService(new SentimentReader(),new TwitReader());
-    service.getAllTwits();
+    TwitService service=new TwitService(new SentimentReader().readSentiments(Paths.SENTIMENTS_PATH.getValue()),new TwitReader());
+    service.getAllTwitsWithSentiment().stream().forEach(System.out::println);
 } 
 
 /** 

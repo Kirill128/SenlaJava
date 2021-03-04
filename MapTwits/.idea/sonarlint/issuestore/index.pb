@@ -41,3 +41,5 @@ u
 Eservice/src/main/java/by/grsu/maptwits/statesservice/TwitService.java,a/f/afe1f5f801572d416d68df42d443f37217dacfa0
 h
 8service/src/test/java/statesservice/TwitServiceTest.java,3/4/34bcdccfc5b8f75ed7c0c06cc9e6ceb8ad7171e2
+g
+7api/src/main/java/by/grsu/maptwits/constants/Paths.java,d/9/d9dd38632b17f642c1fe694b3ae1de4f55e0a56a
