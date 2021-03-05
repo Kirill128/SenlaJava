@@ -33,7 +33,9 @@ public class TwitReader implements ITwitReader {
                         .build());
             }
         }catch (IOException e){
-            System.out.printf(e.getMessage());
+            System.out.println("IOException"+ e.getMessage());
+        }catch( NumberFormatException e){
+            System.out.println("NumberFormatException"+ e.getMessage());
         }
 
         return twits;
@@ -81,7 +83,9 @@ public class TwitReader implements ITwitReader {
         buf.delete(0,buf.length());
         //------------text search------------
         for(;position<twitSymbols.length;position++){
-            if(twitSymbols[position]!=' ' && twitSymbols[position]!=',' && twitSymbols[position]!='\t'){
+            if(twitSymbols[position]!=' ' && twitSymbols[position]!=',' && twitSymbols[position]!='\t'
+                    && twitSymbols[position]!='.' && twitSymbols[position]!=':' && twitSymbols[position]!=';'
+                    && twitSymbols[position]!='!' && twitSymbols[position]!='?' && twitSymbols[position]!='-'){
                 buf.append(twitSymbols[position]);
                 if(position== twitSymbols.length-1){
                     parts.add(buf.toString());

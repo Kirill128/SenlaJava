@@ -43,3 +43,7 @@ h
 8service/src/test/java/statesservice/TwitServiceTest.java,3/4/34bcdccfc5b8f75ed7c0c06cc9e6ceb8ad7171e2
 g
 7api/src/main/java/by/grsu/maptwits/constants/Paths.java,d/9/d9dd38632b17f642c1fe694b3ae1de4f55e0a56a
+{
+Kservice/src/test/java/by/grsu/maptwits/statesservice/StatesServiceTest.java,1/1/1175fd33cde899c820d1f85bceeb3b3cfc1cc763
+l
+<api/src/main/java/by/grsu/maptwits/objforjson/StateJson.java,a/8/a8f2f9ad04bee48c95d3e1a06291a6ecb249d5ac

@@ -26,7 +26,7 @@ public class TwitService implements ITwitService {
         for(Twit t:twits){
             sentiment=0;
             for(String s:t.getWords()){
-                sentiment+=this.sentimentMap.getOrDefault(s,0.0);
+                sentiment+=(double)this.sentimentMap.getOrDefault(s,0.0);
             }
             t.setSentiment(sentiment);
         }
@@ -37,6 +37,13 @@ public class TwitService implements ITwitService {
     //               Getters & Setters
 
 
+    public Map<String, Double> getSentimentMap() {
+        return sentimentMap;
+    }
+
+    public void setSentimentMap(Map<String, Double> sentimentMap) {
+        this.sentimentMap = sentimentMap;
+    }
     public ITwitReader getTwitReader() {
         return twitReader;
     }

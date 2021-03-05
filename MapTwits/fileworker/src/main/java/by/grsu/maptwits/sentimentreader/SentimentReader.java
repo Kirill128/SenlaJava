@@ -21,8 +21,10 @@ public class SentimentReader implements ISentimentReader {
                 wordAndValue=line.split(",");
                 sentiments.put(wordAndValue[0],Double.parseDouble(wordAndValue[1]));
             }
-        }catch (IOException | NumberFormatException e){
-            System.out.printf(e.getStackTrace()+e.getMessage());
+        }catch (IOException e){
+            System.out.println("IOException "+ e.getMessage());
+        }catch( NumberFormatException e){
+            System.out.println("NumberFormatException "+ e.getMessage());
         }
 
         return sentiments;
