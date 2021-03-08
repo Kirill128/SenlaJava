@@ -7,11 +7,13 @@ import com.it.academy.api.mappers.PetEntityMapper;
 import com.it.academy.api.service.IPetService;
 import com.it.academy.entitys.PetEntity;
 import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class PetService implements IPetService {
-
+    @Autowired
     private IPetDJPADao petDao;
 
     public PetService(IPetDJPADao petDao){

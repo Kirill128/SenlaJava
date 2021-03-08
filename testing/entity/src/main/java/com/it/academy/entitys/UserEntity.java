@@ -15,11 +15,24 @@ public class UserEntity extends AEntity<Integer>{
     @Column(name="name")
     private String name;
 
+    @Column(name="password")
+    private String password;
+
     @Column(name="email")
     private String email;
 
     @OneToMany(mappedBy = "user",fetch = FetchType.LAZY,cascade = CascadeType.ALL,orphanRemoval = true)
     private List<PetEntity> pets;
+
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
 
     public String getName() {
         return name;

@@ -9,13 +9,14 @@
 <body>
 
 	<div>
-		<h1 th:text = "${user.firstName} + '\'s personal page'" />
+		<h1 th:text = "${user.username} + '\'s personal page'" />
 	</div>
 	<div class = "user-wrapper">
 		<div class = "user-div">
 			<p th:text="'User id is: ' + ${user.id}" />
-			<p th:text="'User name is: ' + ${user.firstName}" />
+			<p th:text="'User name is: ' + ${user.username}" />
 			<p th:text="'User salary is: ' + ${user.salary}" />
+			<img th:src = "@{'../images/' + ${user.username} + '.jpg'}" />
 		</div>
 	</div>
 </body>

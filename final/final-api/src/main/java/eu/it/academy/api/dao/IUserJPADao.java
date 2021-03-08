@@ -5,5 +5,5 @@ import eu.it.academy.entities.User;
 
 public interface IUserJPADao extends JpaRepository<User, Integer> {
 
-    User findByFirstName(String finstName);
+    User findByUsername(String username);
 }

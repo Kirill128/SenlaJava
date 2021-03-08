@@ -10,14 +10,15 @@
     <!ELEMENT raiting (#PCDATA)>
 ]>
 <?xml-model href="disks.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
-            <disks>
+<?xml-stylesheet type="text/xsl" href="/home/kirill/Programming/SenlaJava/HtmlCss/Labs/lab3/disks.xsl"?> 
+<disks>
                 <disk>
                     <author>Vana Mishev</author>
                     <name>Under the sea</name>
                     <cost>202.4</cost>
                     <size>Midle</size>
                     <year>2000</year>
-                    <raiting>6.4<raiting>
+                    <raiting>6.4</raiting>
                 </disk>
                 <disk>
                     <author>Vana Mishev</author>
@@ -25,7 +26,7 @@
                     <cost>202.4</cost>
                     <size>Midle</size>
                     <year>2000</year>
-                    <raiting>6.4<raiting>
+                    <raiting>6.4</raiting>
                 </disk>
                 <disk>
                     <author>Vana Mishev</author>
@@ -33,7 +34,7 @@
                     <cost>202.4</cost>
                     <size>Midle</size>
                     <year>2000</year>
-                    <raiting>6.4<raiting>
+                    <raiting>6.4</raiting>
                 </disk>
                 <disk>
                     <author>Vana Mishev</author>
@@ -41,7 +42,7 @@
                     <cost>202.4</cost>
                     <size>Midle</size>
                     <year>2000</year>
-                    <raiting>6.4<raiting>
+                    <raiting>6.4</raiting>
                 </disk>
                 <disk>
                     <author>Vana Mishev</author>
@@ -49,6 +50,6 @@
                     <cost>202.4</cost>
                     <size>Midle</size>
                     <year>2000</year>
-                    <raiting>6.4<raiting>
+                    <raiting>6.4</raiting>
                 </disk>
             </disks>

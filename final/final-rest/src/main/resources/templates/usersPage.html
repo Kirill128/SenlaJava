@@ -14,7 +14,7 @@
 	<div class = "user-wrapper">
 		<div th:each = "oneuser : ${usersList}" class = "user-div">
 			<!-- <p th:text="'User id is: ' + ${user.id}" /> -->
-			<p th:text = "'User name is: ' + ${oneuser.firstName}" />
+			<p th:text = "'User name is: ' + ${oneuser.username}" />
 			<p th:text = "'User salary is: ' + ${oneuser.salary}" />
 			<a th:href = "@{'users/' + ${oneuser.id}}">More info</a>
 		</div>

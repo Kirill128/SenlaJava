@@ -4,17 +4,195 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fec91f3-ec5a-489d-b306-89935f53ecca" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../HtmlCss/Labs/lab1/css/styleCv.css" beforeDir="false" afterPath="$PROJECT_DIR$/../HtmlCss/Labs/lab1/css/styleCv.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HtmlCss/Labs/lab1/cv.html" beforeDir="false" afterPath="$PROJECT_DIR$/../HtmlCss/Labs/lab1/cv.html" afterDir="false" />
+    <list default="true" id="8090e1b7-6346-44af-9cfc-1c05c55ebb3b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../MapTwits/.idea/sonarlint/issuestore/1/1/1175fd33cde899c820d1f85bceeb3b3cfc1cc763" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapTwits/.idea/sonarlint/issuestore/a/8/a8f2f9ad04bee48c95d3e1a06291a6ecb249d5ac" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapTwits/api/src/main/java/by/grsu/maptwits/objforjson/StateJson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapTwits/api/target/classes/by/grsu/maptwits/objforjson/StateJson.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapTwits/entity/src/main/java/by/grsu/maptwits/polygons/Polygon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapTwits/entity/target/classes/by/grsu/maptwits/polygons/Polygon.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapTwits/fileworker/target/classes/by/grsu/maptwits/statesreader/StateReader$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapTwits/service/src/test/java/by/grsu/maptwits/statesservice/StatesServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MapTwits/service/target/test-classes/by/grsu/maptwits/statesservice/StatesServiceTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/5/15b8ed64a88cb22c1b209d7b6b671b1ba80f71a8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/f/1f6ae988e04fd8027ca8dc4702562e6723cc9f29" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/0/3014e69305f363fb41420713316c60f03f4e4efb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/0/305bca91c1eddb12a7b5386ab0c41adfbd1fbe5d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/3/3371d613f3bfe1d344e597e356733f8147a47736" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/44d12507b2e29007615a269c2ba8fbe2c6d85098" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/5/45e488c851413ae3b0e088328aba09144caa68d7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/b/5be069672325fb5a21c5a0e58512cc7b00358213" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/a/9ad0a80018ec53f8f210d82cc842d53b93ad2c26" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9fa3a100043f9a6a845dcf581d2e930b96a683ad" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/3/b380c210a24c23863a20fa5f9ad2608311d563c4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testing/entity/src/main/java/com/it/academy/entitys/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testing/rest/src/main/java/com/it/academy/accessdeniedhandler/CustomAccessDeniedHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testing/rest/src/main/java/com/it/academy/configuration/SecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testing/rest/src/main/java/com/it/academy/controllers/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testing/rest/src/main/java/com/it/academy/controllers/SignUpController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testing/rest/src/main/resources/static/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testing/rest/src/main/resources/static/css/signupin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testing/rest/src/main/resources/static/css/users.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testing/rest/src/main/resources/static/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testing/rest/src/main/resources/templates/403.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testing/rest/src/main/resources/templates/adminPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testing/rest/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testing/rest/src/main/resources/templates/mainpage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testing/rest/src/main/resources/templates/signinres.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testing/rest/src/main/resources/templates/signinup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testing/rest/src/main/resources/templates/signupres.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testing/rest/src/main/resources/templates/userPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testing/rest/src/main/resources/templates/usersPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HtmlCss/Project/2-LogIn/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../HtmlCss/Project/2-LogIn/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HtmlCss/Project/2-LogIn/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapTwits/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MapTwits/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapTwits/.idea/sonarlint/issuestore/3/4/34bcdccfc5b8f75ed7c0c06cc9e6ceb8ad7171e2" beforeDir="false" afterPath="$PROJECT_DIR$/../MapTwits/.idea/sonarlint/issuestore/3/4/34bcdccfc5b8f75ed7c0c06cc9e6ceb8ad7171e2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapTwits/.idea/sonarlint/issuestore/5/6/5687dcdb9b1a7d4836591eb6fac7aa1ab8411854" beforeDir="false" afterPath="$PROJECT_DIR$/../MapTwits/.idea/sonarlint/issuestore/5/6/5687dcdb9b1a7d4836591eb6fac7aa1ab8411854" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapTwits/.idea/sonarlint/issuestore/6/0/60d55b243f34d89dc3980807da0b334a31ab8521" beforeDir="false" afterPath="$PROJECT_DIR$/../MapTwits/.idea/sonarlint/issuestore/6/0/60d55b243f34d89dc3980807da0b334a31ab8521" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapTwits/.idea/sonarlint/issuestore/9/9/994891d45252d374a3ce7080fea04ad988c2f14e" beforeDir="false" afterPath="$PROJECT_DIR$/../MapTwits/.idea/sonarlint/issuestore/9/9/994891d45252d374a3ce7080fea04ad988c2f14e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapTwits/.idea/sonarlint/issuestore/d/8/d8590f33b3825bab9ee8bb80e9d715df67996391" beforeDir="false" afterPath="$PROJECT_DIR$/../MapTwits/.idea/sonarlint/issuestore/d/8/d8590f33b3825bab9ee8bb80e9d715df67996391" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapTwits/.idea/sonarlint/issuestore/d/9/d9dd38632b17f642c1fe694b3ae1de4f55e0a56a" beforeDir="false" afterPath="$PROJECT_DIR$/../MapTwits/.idea/sonarlint/issuestore/d/9/d9dd38632b17f642c1fe694b3ae1de4f55e0a56a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapTwits/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../MapTwits/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapTwits/api/src/main/java/by/grsu/maptwits/constants/Paths.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MapTwits/api/src/main/java/by/grsu/maptwits/constants/Paths.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapTwits/api/src/main/java/by/grsu/maptwits/fileworker/IStatesReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MapTwits/api/src/main/java/by/grsu/maptwits/fileworker/IStatesReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapTwits/api/src/main/java/by/grsu/maptwits/service/IStatesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MapTwits/api/src/main/java/by/grsu/maptwits/service/IStatesService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapTwits/api/target/classes/by/grsu/maptwits/constants/Paths.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MapTwits/api/target/classes/by/grsu/maptwits/constants/Paths.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapTwits/api/target/classes/by/grsu/maptwits/fileworker/IStatesReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MapTwits/api/target/classes/by/grsu/maptwits/fileworker/IStatesReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapTwits/entity/entity.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapTwits/entity/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MapTwits/entity/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapTwits/entity/src/main/java/by/grsu/maptwits/lines/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MapTwits/entity/src/main/java/by/grsu/maptwits/lines/Line.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapTwits/entity/src/main/java/by/grsu/maptwits/states/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MapTwits/entity/src/main/java/by/grsu/maptwits/states/State.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapTwits/entity/target/classes/by/grsu/maptwits/lines/Line.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MapTwits/entity/target/classes/by/grsu/maptwits/lines/Line.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapTwits/entity/target/classes/by/grsu/maptwits/states/State$StateBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MapTwits/entity/target/classes/by/grsu/maptwits/states/State$StateBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapTwits/entity/target/classes/by/grsu/maptwits/states/State.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MapTwits/entity/target/classes/by/grsu/maptwits/states/State.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapTwits/fileworker/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MapTwits/fileworker/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapTwits/fileworker/src/main/java/by/grsu/maptwits/sentimentreader/SentimentReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MapTwits/fileworker/src/main/java/by/grsu/maptwits/sentimentreader/SentimentReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapTwits/fileworker/src/main/java/by/grsu/maptwits/statesreader/StateReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MapTwits/fileworker/src/main/java/by/grsu/maptwits/statesreader/StateReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapTwits/fileworker/src/main/java/by/grsu/maptwits/twitreader/TwitReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MapTwits/fileworker/src/main/java/by/grsu/maptwits/twitreader/TwitReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapTwits/fileworker/target/classes/by/grsu/maptwits/sentimentreader/SentimentReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MapTwits/fileworker/target/classes/by/grsu/maptwits/sentimentreader/SentimentReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapTwits/fileworker/target/classes/by/grsu/maptwits/statesreader/StateReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MapTwits/fileworker/target/classes/by/grsu/maptwits/statesreader/StateReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapTwits/fileworker/target/classes/by/grsu/maptwits/twitreader/TwitReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MapTwits/fileworker/target/classes/by/grsu/maptwits/twitreader/TwitReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapTwits/service/src/main/java/by/grsu/maptwits/statesservice/StatesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MapTwits/service/src/main/java/by/grsu/maptwits/statesservice/StatesService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapTwits/service/src/main/java/by/grsu/maptwits/statesservice/TwitService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MapTwits/service/src/main/java/by/grsu/maptwits/statesservice/TwitService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapTwits/service/target/classes/by/grsu/maptwits/statesservice/StatesService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MapTwits/service/target/classes/by/grsu/maptwits/statesservice/StatesService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapTwits/service/target/classes/by/grsu/maptwits/statesservice/TwitService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MapTwits/service/target/classes/by/grsu/maptwits/statesservice/TwitService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__eu_it_academy_final_final_logger_0_0_1_SNAPSHOT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/d/0da09403011a2b8f5ec49e429f66a2ebcf66d373" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/b/1b492d09d3ed4bd12baf2c1442a304e3efa065ff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/4/3416a47e4ba0a27abfd5e0ae6471d87cb72b065c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/2/629d80fba80e9e5bae8e75f7ed6b21dc7249b351" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/f/6f828a78a8dcab9578330300a0f369d993c8842f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/1/81262ebf9a1e6dc25cb32f4f9729bf25b7c1bffd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/c/9c74a5e3fbc62fa5580c4b453a60d707fe25e266" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/5/b503f2ecfdb700f2e7a26285c3c4ec8a55e769a9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/6/c660f99a6e588d04d47f0c758b7a47cd400f8562" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/8/f8cbda9b645c8aa664e445afdca2236b8dd779d5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-api/src/main/java/eu/it/academy/api/dao/IUserJPADao.java" beforeDir="false" afterPath="$PROJECT_DIR$/final-api/src/main/java/eu/it/academy/api/dao/IUserJPADao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-api/src/main/java/eu/it/academy/api/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/final-api/src/main/java/eu/it/academy/api/dto/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-api/src/main/java/eu/it/academy/api/mappers/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/final-api/src/main/java/eu/it/academy/api/mappers/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-api/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-api/target/classes/META-INF/maven/eu.it.academy.final/final-api/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-api/target/classes/META-INF/maven/eu.it.academy.final/final-api/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-api/target/classes/eu/it/academy/api/dao/IAGenericDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/final-api/target/classes/eu/it/academy/api/dao/IAGenericDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-api/target/classes/eu/it/academy/api/dao/IPetDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/final-api/target/classes/eu/it/academy/api/dao/IPetDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-api/target/classes/eu/it/academy/api/dao/IPetJPADao.class" beforeDir="false" afterPath="$PROJECT_DIR$/final-api/target/classes/eu/it/academy/api/dao/IPetJPADao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-api/target/classes/eu/it/academy/api/dao/IUserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/final-api/target/classes/eu/it/academy/api/dao/IUserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-api/target/classes/eu/it/academy/api/dao/IUserJPADao.class" beforeDir="false" afterPath="$PROJECT_DIR$/final-api/target/classes/eu/it/academy/api/dao/IUserJPADao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-api/target/classes/eu/it/academy/api/dto/PetDto$PetDtoBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/final-api/target/classes/eu/it/academy/api/dto/PetDto$PetDtoBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-api/target/classes/eu/it/academy/api/dto/PetDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/final-api/target/classes/eu/it/academy/api/dto/PetDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-api/target/classes/eu/it/academy/api/dto/UserDto$UserDtoBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/final-api/target/classes/eu/it/academy/api/dto/UserDto$UserDtoBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-api/target/classes/eu/it/academy/api/dto/UserDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/final-api/target/classes/eu/it/academy/api/dto/UserDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-api/target/classes/eu/it/academy/api/dto/UserPetIdsDto$UserPetIdsDtoBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/final-api/target/classes/eu/it/academy/api/dto/UserPetIdsDto$UserPetIdsDtoBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-api/target/classes/eu/it/academy/api/dto/UserPetIdsDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/final-api/target/classes/eu/it/academy/api/dto/UserPetIdsDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-api/target/classes/eu/it/academy/api/mappers/PetMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/final-api/target/classes/eu/it/academy/api/mappers/PetMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-api/target/classes/eu/it/academy/api/mappers/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/final-api/target/classes/eu/it/academy/api/mappers/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-api/target/classes/eu/it/academy/api/services/IPetService.class" beforeDir="false" afterPath="$PROJECT_DIR$/final-api/target/classes/eu/it/academy/api/services/IPetService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-api/target/classes/eu/it/academy/api/services/IUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/final-api/target/classes/eu/it/academy/api/services/IUserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-api/target/final-api-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/final-api/target/final-api-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-dao/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-dao/target/classes/META-INF/maven/eu.it.academy.final/final-dao/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-dao/target/classes/META-INF/maven/eu.it.academy.final/final-dao/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-dao/target/classes/eu/it/academy/dao/AGenericDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/final-dao/target/classes/eu/it/academy/dao/AGenericDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-dao/target/classes/eu/it/academy/dao/PetDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/final-dao/target/classes/eu/it/academy/dao/PetDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-dao/target/classes/eu/it/academy/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/final-dao/target/classes/eu/it/academy/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-dao/target/final-dao-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/final-dao/target/final-dao-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-entity/src/main/java/eu/it/academy/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/final-entity/src/main/java/eu/it/academy/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-entity/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-entity/target/classes/META-INF/maven/eu.it.academy.final/final-entity/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-entity/target/classes/META-INF/maven/eu.it.academy.final/final-entity/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-entity/target/classes/eu/it/academy/entities/AEntity$AEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/final-entity/target/classes/eu/it/academy/entities/AEntity$AEntityBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-entity/target/classes/eu/it/academy/entities/AEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/final-entity/target/classes/eu/it/academy/entities/AEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-entity/target/classes/eu/it/academy/entities/Pet$PetBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/final-entity/target/classes/eu/it/academy/entities/Pet$PetBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-entity/target/classes/eu/it/academy/entities/Pet$PetBuilderImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/final-entity/target/classes/eu/it/academy/entities/Pet$PetBuilderImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-entity/target/classes/eu/it/academy/entities/Pet.class" beforeDir="false" afterPath="$PROJECT_DIR$/final-entity/target/classes/eu/it/academy/entities/Pet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-entity/target/classes/eu/it/academy/entities/User$UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/final-entity/target/classes/eu/it/academy/entities/User$UserBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-entity/target/classes/eu/it/academy/entities/User$UserBuilderImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/final-entity/target/classes/eu/it/academy/entities/User$UserBuilderImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-entity/target/classes/eu/it/academy/entities/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/final-entity/target/classes/eu/it/academy/entities/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-entity/target/final-entity-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/final-entity/target/final-entity-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-entity/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/final-entity/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-entity/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/final-entity/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-logger/final-logger.iml" beforeDir="false" afterPath="$PROJECT_DIR$/final-logger/final-logger.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-logger/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-logger/target/classes/META-INF/maven/eu.it.academy.final/final-logger/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-logger/target/classes/META-INF/maven/eu.it.academy.final/final-logger/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-logger/target/classes/eu/it/academy/logger/ServiceLogger.class" beforeDir="false" afterPath="$PROJECT_DIR$/final-logger/target/classes/eu/it/academy/logger/ServiceLogger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-logger/target/final-logger-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/final-logger/target/final-logger-0.0.1-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/final-main/final-main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/final-main/final-main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-main/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/final-main/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-main/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-main/target/classes/META-INF/maven/eu.it.academy.final/final-main/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-main/target/classes/META-INF/maven/eu.it.academy.final/final-main/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-main/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/final-main/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-main/target/classes/eu/it/academy/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/final-main/target/classes/eu/it/academy/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-main/target/final-main-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/final-main/target/final-main-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-main/target/final-main-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/final-main/target/final-main-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/final-rest/final-rest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/final-rest/final-rest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-rest/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/final-rest/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-rest/src/main/java/eu/it/academy/rest/MainController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-rest/src/main/java/eu/it/academy/rest/PetController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-rest/src/main/java/eu/it/academy/rest/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-rest/src/main/resources/templates/userPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/final-rest/src/main/resources/templates/userPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-rest/src/main/resources/templates/usersFormPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/final-rest/src/main/resources/templates/usersFormPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-rest/src/main/resources/templates/usersPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/final-rest/src/main/resources/templates/usersPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-rest/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-rest/target/classes/META-INF/maven/eu.it.academy.final/final-rest/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-rest/target/classes/META-INF/maven/eu.it.academy.final/final-rest/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-rest/target/classes/eu/it/academy/rest/MainController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-rest/target/classes/eu/it/academy/rest/PetController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-rest/target/classes/eu/it/academy/rest/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-rest/target/classes/templates/userPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/final-rest/target/classes/templates/userPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-rest/target/classes/templates/usersFormPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/final-rest/target/classes/templates/usersFormPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-rest/target/classes/templates/usersPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/final-rest/target/classes/templates/usersPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-rest/target/final-rest-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/final-rest/target/final-rest-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-rest/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/final-rest/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/final-service/final-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/final-service/final-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/final-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-service/src/main/java/eu/it/academy/services/PetService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-service/src/main/java/eu/it/academy/services/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-service/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-service/target/classes/META-INF/maven/eu.it.academy.final/final-service/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-service/target/classes/META-INF/maven/eu.it.academy.final/final-service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-service/target/classes/eu/it/academy/services/PetService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-service/target/classes/eu/it/academy/services/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-service/target/final-service-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/final-service/target/final-service-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testing/api/src/main/java/com/it/academy/api/dao/IGenericDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../testing/api/src/main/java/com/it/academy/api/dao/IGenericDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testing/api/src/main/java/com/it/academy/api/dto/UserEntityDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../testing/api/src/main/java/com/it/academy/api/dto/UserEntityDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testing/api/src/main/java/com/it/academy/api/mappers/UserEntityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../testing/api/src/main/java/com/it/academy/api/mappers/UserEntityMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testing/dao/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../testing/dao/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testing/entity/src/main/java/com/it/academy/entitys/PetEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../testing/entity/src/main/java/com/it/academy/entitys/PetEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testing/entity/src/main/java/com/it/academy/entitys/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../testing/entity/src/main/java/com/it/academy/entitys/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testing/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../testing/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testing/rest/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../testing/rest/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testing/rest/src/main/java/com/it/academy/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../testing/rest/src/main/java/com/it/academy/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testing/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../testing/service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testing/service/src/main/java/com/it/academy/services/PetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../testing/service/src/main/java/com/it/academy/services/PetService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +202,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1pCmbdh0i3JHUbLEwdUXZy8Fn3Y" />
+  <component name="ProjectId" id="1pPzNH6Wi7f9Jm2hVCAgvpAhdgO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -34,16 +212,39 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Shop" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../testing" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="eu.it.academy.Application" />
+      <module name="final-main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="eu.it.academy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Application" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7fec91f3-ec5a-489d-b306-89935f53ecca" name="Default Changelist" comment="" />
-      <created>1614695519949</created>
+      <changelist id="8090e1b7-6346-44af-9cfc-1c05c55ebb3b" name="Default Changelist" comment="" />
+      <created>1615099472177</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1614695519949</updated>
+      <updated>1615099472177</updated>
     </task>
     <servers />
   </component>

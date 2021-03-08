@@ -14,6 +14,7 @@ public class UserEntityDto {
 
     private int id;
     private String name;
+    private String password;
     private String email;
     private List<PetEntityDto> pets;
 }

@@ -1,0 +1,54 @@
+<html xmlns:th="http://thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/signupin.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <title>Log In</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container__body">
+            <div class="container__login">
+<!--                <form th:action="@{login}" method="post">-->
+<!--                        <div class="container__title title">Sign In</div>-->
+<!--                        <div class="container__input">-->
+<!--                            <div class="input-login">-->
+<!--                                <div class="input-login__title title">Input Login</div>-->
+<!--                                <input type="text">-->
+<!--                            </div>-->
+<!--                            <div class="input-passwd">-->
+<!--                                <div class="input-passwd__title title">Input Password</div>-->
+<!--                                <input type="password">-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    <input type="submit" value="Sign In">-->
+<!--                </form>-->
+
+            </div>
+            <div class="container__signup">    
+                <div class="container__title title">Sign Up</div>
+                <div class="container__input ">
+                    <form action="#" th:action="@{/signup}" th:object="${dto}" method="post">
+                        <div class="input-login">
+                            <label for="name" class="input-login__title title">Input Login</label>
+                            <input id="name" type="text" th:field="*{name}" required>
+                        </div>
+                        <div class="input-passwd">
+                            <label for="password" class="input-passwd__title title">Input Password</label>
+                            <input id="password" type="password" th:field="*{password}" required>
+                        </div>
+                        <div class="input-email">
+                            <label for="email" class="input-email__title title">Input Email</label>
+                            <input id="email" type="text" th:field="*{email}" required>
+                        </div>
+                        <input type="submit" value="Sign Un">
+                    </form>
+                </div>
+            </div>
+            <div class="container__invite"></div>
+        </div>    
+    </div>
+</body>
+</html>

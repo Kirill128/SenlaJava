@@ -1,10 +1,8 @@
 <html xmlns:th="http://thymeleaf.org">
 <head>
 <title>Users page</title>
-<link href="styles/styles.css" rel="stylesheet" />
-<!-- 
-<link href="css/bootstrap.min.css" rel="stylesheet" />
- -->
+<link href="../styles/styles.css" rel="stylesheet" />
+<link href="../styles/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
 
@@ -12,10 +10,10 @@
 		<h2>Add user</h2>
 	</div>
 	<div class = "user-wrapper">
-		<form action="#" th:action="@{add}" th:object="${user}" method="post">
-			<input id="firstName" type="text" th:field="*{firstName}" required/>
-			<input id="salary" type="text" th:field="*{salary}" required/>
-			<input type="submit" value="Submit"/>
+		<form action="#" th:action="@{add}" th:object="${user}" class="form-control" method="post">
+			<input id="firstName" type="text" th:field="*{firstName}" class="form-control" required/>
+			<input id="salary" type="text" th:field="*{salary}" class="form-control" required/>
+			<input type="submit" value="Submit" class = "btn btn-success"/>
 		</form>
 	</div>
 </body>

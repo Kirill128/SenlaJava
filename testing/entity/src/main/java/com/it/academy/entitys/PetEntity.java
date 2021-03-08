@@ -16,8 +16,10 @@ public class PetEntity extends AEntity<Integer>{
     @Column(name="name")
     private String name;
 
+
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name="user_id")
     private UserEntity user;
+
 
 }

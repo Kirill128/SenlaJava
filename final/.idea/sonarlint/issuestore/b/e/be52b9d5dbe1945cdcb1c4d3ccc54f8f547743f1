@@ -1,0 +1,11 @@
+
+X
+java:S2259M"BA "NullPointerException" could be thrown; "user" is nullable here.(É¥¬«
+Q	java:S1251"<This block of commented-out lines of code should be removed.(Ð¼ƒò
+c
+java:S1128"MRemove this unused import 'org.springframework.security.core.Authentication'.(ñýÓ“
+Q	java:S125X"<This block of commented-out lines of code should be removed.(…—ã
+W
+java:S2259K"AA "NullPointerException" could be thrown; "pet" is nullable here.(èíú¿
+‡
+java:S1128"lRemove this unused import 'org.springframework.security.authentication.UsernamePasswordAuthenticationToken'.(ÖÆ„Ùüÿÿÿÿ

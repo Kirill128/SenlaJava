@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE subjects [
+  <!ELEMENT subjects (subject+)>
+  <!ELEMENT subject (name, labscount, mark, groups)>
+  <!ELEMENT name (#PCDATA)>
+  <!ELEMENT labscount (#PCDATA)>
+  <!ELEMENT mark (#PCDATA)>
+  <!ELEMENT groups (group+)>
+  <!ELEMENT group (#PCDATA)>
+]>
+
+<?xml-stylesheet type="text/xsl" href="/home/kirill/Programming/SenlaJava/HtmlCss/Labs/lab3/his.xsl"?>
+<subjects>
+  <subject>
+    <name>Языки разметки документов</name>
+    <labscount>8</labscount>
+    <mark>0</mark>
+    <groups>
+      <group>POIT-191</group>
+      <group>POIT-192</group>
+      <group>POIT-193</group>
+      <group>POIT-194</group>
+      <group>POIT-195</group>
+      <group>KB-191</group>
+      <group>KB-192</group>
+    </groups>
+  </subject>
+
+  <subject>
+     <name>Компьютерные системы и сети</name>
+    <labscount>4</labscount>
+    <mark>0</mark>
+    <groups>
+      <group>POIT-191</group>
+      <group>POIT-192</group>
+      <group>POIT-193</group>
+      <group>POIT-194</group>
+      <group>POIT-195</group>
+    </groups>
+   </subject>
+  
+   <subject>
+     <name>Объектно-ориентированные технологии программирования и стандарты проектирования</name>
+     <labscount>2</labscount>
+     <mark>0</mark>
+     <groups>
+       <group>POIT-191</group>
+       <group>POIT-192</group>
+       <group>POIT-193</group>
+       <group>POIT-194</group>
+       <group>POIT-195</group>
+     </groups>
+   </subject>
+
+  <subject>
+    <name>Операционные системы и системное программирование</name>
+    <labscount>6</labscount>
+    <mark>0</mark>
+    <groups>
+      <group>POIT-191</group>
+      <group>POIT-192</group>
+      <group>POIT-193</group>
+      <group>POIT-194</group>
+      <group>POIT-195</group>
+      <group>KB-191</group>
+      <group>KB-192</group>
+    </groups>
+   </subject>
+  
+   <subject>
+     <name>Технологии разработки платформенно-независимых приложений</name>
+     <labscount>0</labscount>
+     <mark>0</mark>
+     <groups>
+       <group>POIT-191</group>
+       <group>POIT-192</group>
+       <group>POIT-193</group>
+       <group>POIT-194</group>
+       <group>POIT-195</group>
+     </groups>
+   </subject>  
+</subjects>

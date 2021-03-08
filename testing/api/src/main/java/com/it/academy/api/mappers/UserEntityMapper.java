@@ -10,10 +10,10 @@ import java.util.stream.Collectors;
 @UtilityClass
 public class UserEntityMapper {
     public UserEntity mapUserEntity(UserEntityDto source){
-        return UserEntity.builder().id(source.getId()).name(source.getName()).email(source.getEmail()).build();
+        return UserEntity.builder().id(source.getId()).name(source.getName()).email(source.getEmail()).password(source.getPassword()).build();
     }
     public UserEntityDto mapUserEntityDto(UserEntity source){
-        return UserEntityDto.builder().id(source.getId()).name(source.getName()).email(source.getEmail()).build();
+        return UserEntityDto.builder().id(source.getId()).name(source.getName()).email(source.getEmail()).password(source.getPassword()).build();
     }
     public List<UserEntity> mapUserEntitys(List<UserEntityDto> source){
         return source.stream().map(UserEntityMapper::mapUserEntity).collect(Collectors.toList());

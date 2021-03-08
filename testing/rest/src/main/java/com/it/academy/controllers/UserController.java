@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.annotation.Transient;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
 
@@ -17,13 +18,21 @@ public class UserController {
     private IUserService userService;
 
     @GetMapping(value="/{id}")
-    public UserEntityDto findUser(@PathVariable int id){
-        return this.userService.findUser(id);
+    public ModelAndView findUser(@PathVariable int id){
+        UserEntityDto dto=this.userService.findUser(id);
+        ModelAndView modelAndView=new ModelAndView();
+        modelAndView.setViewName("userPage");
+        modelAndView.addObject("user",dto);
+        return modelAndView;
     }
 
-    @GetMapping(value = "all")
-    public List<UserEntityDto> getAllUsers(){
-        return this.userService.getUsers();
+    @GetMapping(value = "/all")
+    public ModelAndView getAllUsers(){
+        List<UserEntityDto>users= this.userService.getUsers();
+        ModelAndView modelAndView=new ModelAndView();
+        modelAndView.setViewName("usersPage");
+        modelAndView.addObject("usersList",users);
+        return modelAndView;
     }
 
     @PostMapping

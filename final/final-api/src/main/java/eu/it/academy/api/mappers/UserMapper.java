@@ -11,11 +11,21 @@ import lombok.experimental.UtilityClass;
 public class UserMapper {
 
     public User mapUser(UserDto source) {
-        return User.builder().id(source.getId()).firstName(source.getFirstName()).salary(source.getSalary()).build();
+        return User.builder()
+                .id(source.getId())
+                .username(source.getUsername())
+                .salary(source.getSalary())
+                .password(source.getPassword())
+                .build();
     }
 
     public UserDto mapUserDto(User source) {
-        return UserDto.builder().id(source.getId()).firstName(source.getFirstName()).salary(source.getSalary()).build();
+        return UserDto.builder()
+                .id(source.getId())
+                .username(source.getUserName())
+                .salary(source.getSalary())
+                .password(source.getPassword())
+                .build();
     }
 
     public List<User> mapUsers(List<UserDto> source) {
