@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Registration</title>
+</head>
+<body class="body">
+	<div class="form-reg">
+		<div class="container">
+			<div class="form-title">
+				<h2>Registration</h2>
+			</div>
+			<div class="form">
+				<form action="pages/home.html">
+					<div class="input-position">
+				      <input class="input" name="name" type="text" placeholder="Name" required>
+				    </div>
+
+				    <div class="input-position">
+				      <input class="input" name="secondname" type="text" placeholder="Second Name" required>
+				    </div>
+
+				    <div class="input-position">
+				  	<input class="input" name="password" type="password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Must have at least 6 characters' : ''); 
+					  																					if(this.checkValidity())
+																										   form.password_repeat.pattern = this.value;" 
+																										placeholder="Password" oncopy="return false;" 
+																										required>
+					</div>
+
+				    <div class="input-position">
+					<input class="input" name="password_repeat" type="password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Please enter the same Password as above' : '');" 
+																																		placeholder="Verify Password" oncopy="return false;" required>
+					</div>
+
+				    <div class="input-position">
+				      <input class="input" type="email" placeholder="E-mail" required>
+				    </div>
+
+				    <div>
+				      <h3 class="form-title">Sex</h3>
+				      <label class="radio">
+				        <input type="radio" name="sex" value="male">male
+				      </label>
+				      <label class="radio">
+				        <input type="radio" name="sex" value="female">female
+				      </label>
+				    </div>
+
+				    <div>
+				      <h3 class="form-title">Birthday</h3>
+				      <div class="data">
+				         <input class="input_data" type="date" name="birthday" value="2000-01-01" required>
+				     </div>
+				    </div>
+
+				    <div>
+				      <h3 class="form-title">Sphere of interests</h3>
+				      <div class="checkbox"></div>
+				      <label>
+				        <input type="checkbox">Programing
+				        <div class="checkbox"></div>
+				      </label>
+
+				      <label>
+				        <input type="checkbox">Desighn
+				        <div class="checkbox"></div>
+				      </label>
+
+				      <label>
+				      	<input type="checkbox">Copyright
+				        <div class="checkbox"></div>
+				      </label>
+
+				      <label>
+				      	<input type="checkbox" v>System administration
+				        <div class="checkbox"></div>
+				      </label>
+
+				      <label>
+				      	<input type="checkbox">Security
+				        <div class="checkbox"></div>
+				      </label>
+				    </div>
+
+				    <div class="form">
+						<button class="button" type="reset" value="reset">
+						  	Clear
+						</button>
+
+						<button class="button" type="submit" value="registration">
+						  	Done
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

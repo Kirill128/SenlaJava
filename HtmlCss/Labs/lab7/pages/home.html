@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+	<title>Home</title>
+</head>
+<body class="body">
+		<div class="form-reg">
+			<div class="container">
+				<div><h1 class="form-title">Hello <span id="username"></span></h1></div>
+				<div><h1 class="form-title">There are <span id="days"></span> days until your birthday</h1></div>
+			</div>
+		</div>
+
+	<script>
+		var url=location.search.substring(1);
+		var parametr=url.split("&");
+
+		var name = parametr[0].split("=")[1];
+		var secondname = parametr[1].split("=")[1];
+		var birthday = parametr[5].split("=")[1];
+
+		var now = new Date();
+		var start = new Date(now.getFullYear(), 0, 0);
+		var diff = (now - start) + ((start.getTimezoneOffset() - now.getTimezoneOffset()) * 60 * 1000);
+		var oneDay = 1000 * 60 * 60 * 24;
+		var day = Math.floor(diff / oneDay);
+
+		var birthdaydate = new Date(birthday.replace(/-/gi, '/'));
+		start = new Date(birthday.split("-")[0], 0, 0);
+		diff = (birthdaydate - start);
+		var day2 = Math.floor(diff / oneDay);
+
+		if(day > day2){
+			day2 = 366 - day + day2;
+		}
+		else{
+			day2 = day2 - day;
+		}
+
+
+		document.getElementById("days").textContent = day2;
+	    document.getElementById("username").textContent = name + " " + secondname;
+	</script>
+
+</body>
+</html>
