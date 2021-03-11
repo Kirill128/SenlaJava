@@ -1,10 +1,12 @@
 package by.grsu.maptwits.statesservice;
 
-import by.grsu.maptwits.constants.Paths;
-import by.grsu.maptwits.fileworker.ISentimentReader;
-import by.grsu.maptwits.fileworker.ITwitReader;
-import by.grsu.maptwits.service.ITwitService;
-import by.grsu.maptwits.twits.Twit;
+import by.grsu.maptwits.api.constants.Paths;
+import by.grsu.maptwits.api.fileworker.ISentimentReader;
+import by.grsu.maptwits.api.fileworker.ITwitReader;
+import by.grsu.maptwits.api.fileworker.sentimentreader.SentimentReader;
+import by.grsu.maptwits.api.fileworker.twitreader.TwitReader;
+import by.grsu.maptwits.api.service.ITwitService;
+import by.grsu.maptwits.entity.twits.Twit;
 
 import java.util.List;
 import java.util.Map;
@@ -17,6 +19,10 @@ public class TwitService implements ITwitService {
     public TwitService(Map<String,Double> sentimentMap, ITwitReader twitReader) {
         this.sentimentMap = sentimentMap;
         this.twitReader = twitReader;
+    }
+    public TwitService(){
+        this.sentimentMap = new SentimentReader().readSentiments(Paths.SENTIMENTS_PATH.getValue());
+        this.twitReader = new TwitReader();
     }
 
     @Override

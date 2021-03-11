@@ -14,6 +14,7 @@
         <module>fileworker</module>
         <module>gui</module>
         <module>api</module>
+        <module>rest</module>
     </modules>
 
     <properties>

@@ -17,6 +17,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/gui/src/main/java/by/grsu/maptwits/paintstates/StatesPaint.java">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
       </map>
     </option>
   </component>

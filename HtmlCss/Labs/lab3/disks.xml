@@ -12,7 +12,7 @@
 <?xml-model href="disks.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <?xml-stylesheet type="text/xsl" href="/home/kirill/Programming/SenlaJava/HtmlCss/Labs/lab3/disks.xsl"?> 
 <disks>
-                <disk>
+                <disk >
                     <author>Vana Mishev</author>
                     <name>Under the sea</name>
                     <cost>202.4</cost>
@@ -21,35 +21,35 @@
                     <raiting>6.4</raiting>
                 </disk>
                 <disk>
-                    <author>Vana Mishev</author>
-                    <name>Under the sea</name>
-                    <cost>202.4</cost>
-                    <size>Midle</size>
-                    <year>2000</year>
-                    <raiting>6.4</raiting>
+                    <author>Nathan Wagner</author>
+                    <name>Blood</name>
+                    <cost>100</cost>
+                    <size>Litle</size>
+                    <year>2020</year>
+                    <raiting>9.4</raiting>
                 </disk>
                 <disk>
-                    <author>Vana Mishev</author>
-                    <name>Under the sea</name>
-                    <cost>202.4</cost>
+                    <author>Nightcore</author>
+                    <name>Bleeding Out</name>
+                    <cost>59.4</cost>
                     <size>Midle</size>
-                    <year>2000</year>
-                    <raiting>6.4</raiting>
+                    <year>2021</year>
+                    <raiting>8.9</raiting>
+                </disk>
+                <disk> 
+                    <author>Ulquiorra Cifer</author>
+                    <name>What is Heart</name>
+                    <cost>193.0</cost>
+                    <size>Big</size>
+                    <year>2018</year>
+                    <raiting>7.0</raiting>
                 </disk>
                 <disk>
-                    <author>Vana Mishev</author>
-                    <name>Under the sea</name>
-                    <cost>202.4</cost>
-                    <size>Midle</size>
-                    <year>2000</year>
-                    <raiting>6.4</raiting>
-                </disk>
-                <disk>
-                    <author>Vana Mishev</author>
-                    <name>Under the sea</name>
-                    <cost>202.4</cost>
-                    <size>Midle</size>
-                    <year>2000</year>
-                    <raiting>6.4</raiting>
+                    <author>Nightcore</author>
+                    <name>Ghost</name>
+                    <cost>100.8</cost>
+                    <size>Litle</size>
+                    <year>2019</year>
+                    <raiting>9.2</raiting>
                 </disk>
             </disks>

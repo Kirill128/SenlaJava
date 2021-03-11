@@ -8,12 +8,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="fileworker" />
+        <module name="rest" />
         <module name="gui" />
         <module name="api" />
-        <module name="entity" />
         <module name="service" />
+        <module name="entity" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8" />
+    <bytecodeTargetLevel target="8">
+      <module name="main" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
