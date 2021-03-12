@@ -44,7 +44,6 @@ public class StateReader implements IStatesReader {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
         return statesJson;
     }
 }

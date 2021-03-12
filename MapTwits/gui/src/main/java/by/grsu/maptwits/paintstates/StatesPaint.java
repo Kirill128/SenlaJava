@@ -2,8 +2,10 @@ package by.grsu.maptwits.paintstates;
 
 import by.grsu.maptwits.api.rest.IStatesController;
 import by.grsu.maptwits.api.rest.StatesController;
+import by.grsu.maptwits.api.service.ITwitService;
 import by.grsu.maptwits.entity.states.State;
 import by.grsu.maptwits.statesservice.StatesService;
+import by.grsu.maptwits.statesservice.TwitService;
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Node;
@@ -30,9 +32,12 @@ public class StatesPaint extends Application {
         stage.setTitle("Polygons");
 
         IStatesController statesController = new StatesController();
+        ITwitService twitService=new TwitService();
         List<State> states = new StatesService().getAllStates();
 
+        statesController.setTwitsToStates(twitService.getAllTwitsWithSentiment(),states);
         List<Polygon> polygonsForGroup = new LinkedList<>();
+
         for(State state :states){
             List<List<Double>> polygons = statesController.getPolygons(state);
             int polyNum = 0;
@@ -40,14 +45,16 @@ public class StatesPaint extends Application {
             for (List<Double> points : polygons) {
                 double[] buf = new double[points.size()];
                 int i = 0;
-                for (Double point : points) buf[i++] = Math.abs(point) * 10;
-
+                for (Double point : points) {
+                    if(i%2==0)buf[i++] = (180-Math.abs(point))*10;
+                    else buf[i++] = (90-point)*10;
+                }
                 Polygon polygon = new Polygon(buf);
                 polygon.setFill(Color.BLACK);
                 polygonsForGroup.add(polygon);
             }
         }
-//        Arrays.stream(polygonsForGroup).forEach(System.out::println);
+//        states.stream().forEach(System.out::println);
         Group group = new Group(polygonsForGroup.toArray(new Polygon[polygonsForGroup.size()]));
         Scene scene=new Scene(group,1920,1080);
         stage.setScene(scene);

@@ -32,4 +32,22 @@ public class StateMapper {
     public List<State> statesMap(List<StateJson> source){
         return source.stream().map(StateMapper::stateMap).collect(Collectors.toList());
     }
+    public List<List<Double>> getPolygons(State state) {//polygons<points of 1 polygon>
+        List<Polygon> polygons=state.getPolygons();
+
+        List<List<Double>> resPolygons=new ArrayList<>(polygons.size());
+        for(Polygon polygon : polygons){
+            int pointsCount=polygon.getPoints().size()*2;
+
+            List<Double> resPolygonPoints=new ArrayList<>(pointsCount);
+            for(Point p: polygon.getPoints()){
+                resPolygonPoints.add(p.getX());
+                resPolygonPoints.add(p.getY());
+            }
+            resPolygons.add(resPolygonPoints);
+        }
+
+        return resPolygons;
+    }
+
 }

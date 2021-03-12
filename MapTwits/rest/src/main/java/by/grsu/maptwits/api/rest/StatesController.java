@@ -1,9 +1,11 @@
 package by.grsu.maptwits.api.rest;
 
+import by.grsu.maptwits.api.mappers.StateMapper;
 import by.grsu.maptwits.api.service.IStatesService;
 import by.grsu.maptwits.entity.points.Point;
 import by.grsu.maptwits.entity.polygons.Polygon;
 import by.grsu.maptwits.entity.states.State;
+import by.grsu.maptwits.entity.twits.Twit;
 import by.grsu.maptwits.statesservice.StatesService;
 
 import java.util.ArrayList;
@@ -22,21 +24,17 @@ public class StatesController implements IStatesController{
     }
     @Override
     public List<List<Double>> getPolygons(State state) {//polygons<points of 1 polygon>
-        List<Polygon> polygons=state.getPolygons();
+        return StateMapper.getPolygons(state);
+    }
 
-        List<List<Double>> resPolygons=new ArrayList<>(polygons.size());
-        for(Polygon polygon : polygons){
-            int pointsCount=polygon.getPoints().size()*2;
+    @Override
+    public void setTwitsToStates(List<Twit> twits, List<State> states) {
+        statesService.setTwitsToStates(twits,states);
+    }
 
-            List<Double> resPolygonPoints=new ArrayList<>(pointsCount);
-            for(Point p: polygon.getPoints()){
-                resPolygonPoints.add(p.getX());
-                resPolygonPoints.add(p.getY());
-            }
-            resPolygons.add(resPolygonPoints);
-        }
+    @Override
+    public void calculateSentiment(List<State> states) {
 
-        return resPolygons;
     }
 
 

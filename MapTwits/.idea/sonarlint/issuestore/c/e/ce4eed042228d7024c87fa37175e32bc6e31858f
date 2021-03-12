@@ -1,10 +1,12 @@
 
 
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(æâÎÄ8´Öõ¿/
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(æâÎÄ8´Öõ¿/
+O
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8è¼‚/
 K
-java:S1128	".Remove this unused import 'javafx.scene.Node'.(ÑÖ¬ï8³öêÂ/
-N
-java:S1481&",Remove this unused "polyNum" local variable.(äÇ´îøÿÿÿÿ8Ø¨æÂ/
-]	java:S1252"<This block of commented-out lines of code should be removed.(û¹Ñûûÿÿÿÿ8‡Õ«Â/
+java:S1128".Remove this unused import 'javafx.scene.Node'.(ÑÖ¬ï8³öêÂ/
 M
-java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ØÄäÂ/
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ØÄäÂ/
+N
+java:S1481+",Remove this unused "polyNum" local variable.(äÇ´îøÿÿÿÿ8Ø¨æÂ/
+X	java:S1259"<This block of commented-out lines of code should be removed.(Ñ¥ğ•8ó‘‚/
