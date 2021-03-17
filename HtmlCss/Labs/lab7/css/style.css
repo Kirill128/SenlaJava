@@ -7,8 +7,6 @@
 
 /* Body */
 .body {
-	background: url("../content/background-2.png") center no-repeat;
-    color:  #C0C0C0;
 }
 
 /* Form */
@@ -25,7 +23,6 @@
 
 .form-title {
 	text-align: center;
-	color:  #C0C0C0;
 }
 
 .form{
@@ -42,24 +39,18 @@
 }
 
 .input {
-    background-color: #181a1b;
-    border-style: flat;
+    border-radius: 10px;
+    padding:10px;
     border-color: #736b5e;
     margin-top: 1px;
     height: 20px;
     width: 200px;
     font-size: 15px;
-    color: #65625e;
 }
-
 .input_data {
-    background-color: #181a1b;
-    border-style: flat;
-    border-color: #736b5e;
     margin-top: 1px;
     height: 20px;
     font-size: 15px;
-    color: #65625e;
 }
 
 .radio {
@@ -79,12 +70,9 @@
 }
 
 .button {
-    background-color: #181a1b;
-    border-style: flat;
+    border-radius: 15px;
     border-color: #736b5e;
-    border-radius: 0px;
     font-size: 18px;
-    color:  #C0C0C0;
     margin-right: 10px;
     padding-left: 15px;
     padding-right: 15px;

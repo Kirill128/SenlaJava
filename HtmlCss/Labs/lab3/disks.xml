@@ -12,7 +12,7 @@
 <?xml-model href="disks.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <?xml-stylesheet type="text/xsl" href="/home/kirill/Programming/SenlaJava/HtmlCss/Labs/lab3/disks.xsl"?> 
 <disks>
-                <disk >
+                <disk>
                     <author>Vana Mishev</author>
                     <name>Under the sea</name>
                     <cost>202.4</cost>
