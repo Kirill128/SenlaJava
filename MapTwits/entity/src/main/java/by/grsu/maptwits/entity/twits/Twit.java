@@ -12,10 +12,10 @@ import java.util.List;
 @Builder
 @ToString
 public class Twit {
+    private double sentiment;
     private Point point;
     private String day;
     private String time;
-    private List<String> words;
-    private double sentiment;
+    private String text;
 
 }

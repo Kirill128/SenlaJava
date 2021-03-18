@@ -1,3 +1,6 @@
-C:\Users\user\eclipse-workspace\final\final-rest\src\main\java\eu\it\academy\rest\PetController.java
-C:\Users\user\eclipse-workspace\final\final-rest\src\main\java\eu\it\academy\rest\MainController.java
-C:\Users\user\eclipse-workspace\final\final-rest\src\main\java\eu\it\academy\rest\UserController.java
+C:\Users\user\eclipse-workspace\final\final-rest\src\main\java\eu\it\academy\rest\configuration\SecurityConfiguration.java
+C:\Users\user\eclipse-workspace\final\final-rest\src\main\java\eu\it\academy\rest\controllers\MainController.java
+C:\Users\user\eclipse-workspace\final\final-rest\src\main\java\eu\it\academy\rest\utils\CustomAccessDeniedHandler.java
+C:\Users\user\eclipse-workspace\final\final-rest\src\main\java\eu\it\academy\rest\controllers\PetController.java
+C:\Users\user\eclipse-workspace\final\final-rest\src\main\java\eu\it\academy\rest\controllers\UserController.java
+C:\Users\user\eclipse-workspace\final\final-rest\src\main\java\eu\it\academy\rest\controllers\SignupController.java

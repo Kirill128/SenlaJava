@@ -1,11 +1,14 @@
 package eu.it.academy.services.services;
 
+import java.io.IOException;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
+
 import eu.it.academy.api.dao.IPetJPADao;
 import eu.it.academy.api.dao.IUserJPADao;
 import eu.it.academy.api.dto.UserDto;
@@ -15,6 +18,7 @@ import eu.it.academy.api.services.IUserService;
 import eu.it.academy.entities.Pet;
 import eu.it.academy.entities.Role;
 import eu.it.academy.entities.User;
+import eu.it.academy.services.utils.LogoFileUploader;
 import lombok.extern.slf4j.Slf4j;
 
 @Service
@@ -47,14 +51,23 @@ public class UserService implements IUserService {
         user.setUserName(userDto.getUsername());
         user.setPassword(passwordEncoder.encode(userDto.getPassword()));
 //        user.getRoles().add(new Role("ROLE_USER"));
-        return UserMapper.mapUserDto(this.userJPADao.save(user));
+        User savedUser = this.userJPADao.save(user);
+        return UserMapper.mapUserDto(savedUser);
     }
 
     @Override
-    public void updateUser(int id, UserDto userDto) {
-        User user = this.userJPADao.findById(id).orElse(null);
+    public void updateUser(String firstName, UserDto userDto, MultipartFile file) {
+//        User user = this.userJPADao.findById(id).orElse(null);
+        User user = this.userJPADao.findByUsername(firstName);
         if(user != null) {
+            user.setUserName(userDto.getUsername());
+            user.setSalary(userDto.getSalary());
             this.userJPADao.save(user);
+        }
+        try {
+            LogoFileUploader.updateOrCreateLogo(file, userDto);
+        } catch (IOException e) {
+            log.error("Failed to upload image. Error message: {}", e.getMessage());
         }
     }
 

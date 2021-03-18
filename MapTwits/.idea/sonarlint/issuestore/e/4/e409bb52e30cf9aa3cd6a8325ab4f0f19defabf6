@@ -1,7 +1,5 @@
 
 H
-java:S1135-"2Complete the task associated to this TODO comment.(๒–ฝ
-S	java:S106$"9Replace this use of System.out or System.err by a logger.(ฑÛิศ๛ÿÿÿÿ
+java:S1135,"2Complete the task associated to this TODO comment.(๒–ฝ
 N	java:S106&"9Replace this use of System.out or System.err by a logger.(ผฺก๏
-h
-java:S3776-"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(๒–ฝ
+S	java:S106$"9Replace this use of System.out or System.err by a logger.(ฑÛิศ๛ÿÿÿÿ

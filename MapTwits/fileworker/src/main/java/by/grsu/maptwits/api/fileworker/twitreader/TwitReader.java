@@ -29,7 +29,7 @@ public class TwitReader implements ITwitReader {
                                 ))
                         .day(info.get(2))
                         .time(info.get(3))
-                        .words(info.subList(4,info.size()))
+                        .text(info.get(4))
                         .build());
             }
         }catch (IOException e){
@@ -37,65 +37,59 @@ public class TwitReader implements ITwitReader {
         }catch( NumberFormatException e){
             System.out.println("NumberFormatException"+ e.getMessage());
         }
-
         return twits;
     }
 
 
-    public List<String> divideTwit(String twit){//TODO:BIG   hardcode was made, remake if have time
-        List<String> parts=new ArrayList<>();
+    public List<String> divideTwit(String twit) {//TODO:BIG   hardcode was made, remake if have time
+        List<String> parts = new ArrayList<>();
 
-        char[] twitSymbols=twit.toCharArray();
-        StringBuilder buf=new StringBuilder();
+        char[] twitSymbols = twit.toCharArray();
+        StringBuilder buf = new StringBuilder();
 
-        int position=twit.indexOf('[');
+        int position = twit.indexOf('[');
 
         //------------coordinates search------------
         position++;
-        while( twitSymbols[position]!=',' ){
+        while (twitSymbols[position] != ',') {
             buf.append(twitSymbols[position++]);
         }
         parts.add(buf.toString());
-        buf.delete(0,buf.length());
-        position+=2;
-        while( twitSymbols[position]!=']'){
+        buf.delete(0, buf.length());
+        position += 2;
+        while (twitSymbols[position] != ']') {
             buf.append(twitSymbols[position++]);
         }
         parts.add(buf.toString());
-        buf.delete(0,buf.length());
+        buf.delete(0, buf.length());
 
         //------------data time search------------
-        for(;position<twitSymbols.length;position++) {
-            if(Character.isDigit(twitSymbols[position])) {
+        for (; position < twitSymbols.length; position++) {
+            if (Character.isDigit(twitSymbols[position])) {
                 break;
             }
         }
-        while(twitSymbols[position]!=' ' && twitSymbols[position]!='\t'){
+        while (twitSymbols[position] != ' ' && twitSymbols[position] != '\t') {
             buf.append(twitSymbols[position++]);
         }
         parts.add(buf.toString());
-        buf.delete(0,buf.length());
+        buf.delete(0, buf.length());
         position++;
-        while(twitSymbols[position]!=' ' && twitSymbols[position]!='\t'){
+        while (twitSymbols[position] != ' ' && twitSymbols[position] != '\t') {
             buf.append(twitSymbols[position++]);
         }
         parts.add(buf.toString());
-        buf.delete(0,buf.length());
+        buf.delete(0, buf.length());
         //------------text search------------
-        for(;position<twitSymbols.length;position++){
-            if(twitSymbols[position]!=' ' && twitSymbols[position]!=',' && twitSymbols[position]!='\t'
-                    && twitSymbols[position]!='.' && twitSymbols[position]!=':' && twitSymbols[position]!=';'
-                    && twitSymbols[position]!='!' && twitSymbols[position]!='?' && twitSymbols[position]!='-'){
-                buf.append(twitSymbols[position]);
-                if(position== twitSymbols.length-1){
-                    parts.add(buf.toString());
-                    buf.delete(0,buf.length());}
-            }else{
-                if(buf.length()!=0 ){
-                    parts.add(buf.toString());
-                    buf.delete(0,buf.length());
-                }
+
+        for (; position < twitSymbols.length; position++) {
+
+            buf.append(twitSymbols[position]);
+            if (position == twitSymbols.length - 1) {
+                parts.add(buf.toString());
+
             }
+
         }
         return parts;
     }

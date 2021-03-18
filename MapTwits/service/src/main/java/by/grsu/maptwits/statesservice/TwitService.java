@@ -10,6 +10,9 @@ import by.grsu.maptwits.entity.twits.Twit;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class TwitService implements ITwitService {
 
@@ -29,13 +32,22 @@ public class TwitService implements ITwitService {
     public List<Twit> getAllTwitsWithSentiment() {
         List<Twit> twits=twitReader.readTwits(Paths.TWITS_PATH.getValue());
         double sentiment;
+        Set<Map.Entry<String,Double>> entries=sentimentMap.entrySet();
         for(Twit t:twits){
             sentiment=0;
-            for(String s:t.getWords()){
-                sentiment+=(double)this.sentimentMap.getOrDefault(s,0.0);
+
+            for(Map.Entry<String,Double> entry:entries) {
+                Pattern pattern =Pattern.compile(entry.getKey(),Pattern.CASE_INSENSITIVE);
+                Matcher matcher=pattern.matcher(t.getText());
+                while(matcher.find()){
+                    sentiment+= entry.getValue();
+                    matcher.replaceAll( "");
+                }
             }
+
             t.setSentiment(sentiment);
         }
+        twits.stream().forEach(System.out::println);
 
         return twits;
     }

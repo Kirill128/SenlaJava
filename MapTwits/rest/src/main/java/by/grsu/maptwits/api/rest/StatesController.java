@@ -3,7 +3,7 @@ package by.grsu.maptwits.api.rest;
 import by.grsu.maptwits.api.mappers.StateMapper;
 import by.grsu.maptwits.api.service.IStatesService;
 import by.grsu.maptwits.entity.points.Point;
-import by.grsu.maptwits.entity.polygons.Polygon;
+import javafx.scene.shape.Polygon;
 import by.grsu.maptwits.entity.states.State;
 import by.grsu.maptwits.entity.twits.Twit;
 import by.grsu.maptwits.statesservice.StatesService;
@@ -34,7 +34,17 @@ public class StatesController implements IStatesController{
 
     @Override
     public void calculateSentiment(List<State> states) {
+        this.statesService.calculateSentiment(states);
+    }
 
+    @Override
+    public void setTwitsToState(List<Twit> twits, State state, List<Polygon> polygon) {
+        this.statesService.setTwitsToState(twits,state,polygon);
+    }
+
+    @Override
+    public void setColor(State states) {
+        this.statesService.setColor(states);
     }
 
 

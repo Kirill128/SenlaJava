@@ -10,6 +10,7 @@ import org.springframework.security.authentication.ProviderManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.core.Authentication;
 import org.springframework.security.web.access.AccessDeniedHandler;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
@@ -18,7 +19,6 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     @Autowired
     private AccessDeniedHandler accessDeniedHandler;
-
     @Autowired
     private DataSource dataSource;
     
@@ -32,9 +32,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable().authorizeRequests()
                 .antMatchers("/", "/signup/**", "/js/**", "/styles/**", "/images/**").permitAll()
-                .antMatchers("/admin/**").hasRole("ADMIN").anyRequest().authenticated()
-                .and().formLogin().loginPage("/login").permitAll()
-                .and().logout().invalidateHttpSession(true).clearAuthentication(true)
+                .antMatchers("/admin/**").hasRole("ADMIN").anyRequest().authenticated().and().formLogin().loginPage("/login")
+                .permitAll().and().logout().invalidateHttpSession(true).clearAuthentication(true)
                 .logoutRequestMatcher(new AntPathRequestMatcher("/logout")).logoutSuccessUrl("/").permitAll()
                 .and().exceptionHandling().accessDeniedHandler(accessDeniedHandler);
     }
@@ -42,10 +41,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Autowired
     public void configureGlobal(AuthenticationManagerBuilder builder) throws Exception {
         builder.jdbcAuthentication().dataSource(dataSource).authoritiesByUsernameQuery(
-                "SELECT user.name as username, role.role as role FROM user " +
-                        "INNER JOIN user_role ON user.id = user_role.user_id " +
-                        "INNER JOIN role ON user_role.role_id = role.id " +
-                        "WHERE user.name = ?")
+                "SELECT user.name as username, role.role as role FROM user INNER JOIN user_role ON user.id = user_role.user_id INNER JOIN role ON user_role.role_id = role.id WHERE user.name = ?")
                 .usersByUsernameQuery("select name, password, 1 as enabled from user where name = ?");
     }
 }

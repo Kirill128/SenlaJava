@@ -24,7 +24,7 @@ public class SignupController {
 
     @Autowired
     private IUserService userService;
-
+    
     @Autowired
     AuthenticationManager authenticationManager;
     

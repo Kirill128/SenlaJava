@@ -3,6 +3,7 @@ package eu.it.academy.api.services;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 import eu.it.academy.api.dto.UserDto;
 import eu.it.academy.api.dto.UserPetIdsDto;
 
@@ -15,7 +16,7 @@ public interface IUserService {
     
     UserDto createUser(UserDto user);
     
-    void updateUser(int id, UserDto user);
+    void updateUser(String firstName, UserDto user, MultipartFile file);
     
     void deleteUser(int id);
     
