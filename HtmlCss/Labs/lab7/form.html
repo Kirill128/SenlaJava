@@ -36,7 +36,7 @@
 					</div>
 
 				    <div class="input-position">
-				      <input class="input" type="email" placeholder="E-mail" required>
+				      <input class="input" type="email" placeholder="E-mail"  pattern="^\S{1,}@\S{1,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Please enter correct email' : '');" required>
 				    </div>
 
 				    <div>
