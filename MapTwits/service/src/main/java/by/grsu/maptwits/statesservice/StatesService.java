@@ -16,8 +16,9 @@ import java.util.List;
 
 public class StatesService implements IStatesService {
 
-    public static String [] SENTIMENT_COLORS=new String[]{"#22366A", "#3B596A", "#427676", "#3F9A82", "#77BFFF",
+    public static final String [] SENTIMENT_COLORS=new String[]{"#22366A", "#3B596A", "#427676", "#3F9A82", "#77BFFF",
                                                             "#FFFFFF","#ECDB60", "#FFDD22", "#FFAA11", "#FF8800", "#FF5500"};
+
     public static final String GRAY = "#AAAAAA";
 
     private IStatesReader statesReader;
@@ -75,19 +76,33 @@ public class StatesService implements IStatesService {
 
     @Override
     public void setColor(State state) {
-            int sentiment_scale=1;
+        int forSide=5;
+        int scale=10;
+
             if(state.getTwits().isEmpty()){
                 state.setColor(GRAY);
                 return;
             }
-            double scaled = (sentiment_scale * state.getSentiment() + 1)/2;
-            int index  = (int)(scaled * SENTIMENT_COLORS.length);
+        int index=0;
+        int math=0;
 
-            if (index < 0)
-                index = 0;
-            if (index >= SENTIMENT_COLORS.length)
-                index = SENTIMENT_COLORS.length - 1;
-            state.setColor( SENTIMENT_COLORS[index]);
+        double rightSentiment=state.getSentiment();
+        if(rightSentiment>0)
+            rightSentiment+=10;
+        if(rightSentiment<0)
+            rightSentiment-=10;
+        index=(int)(rightSentiment/scale);
+
+        index+=forSide;
+        if(index<0){
+            index=0;
+        }
+        if(index>SENTIMENT_COLORS.length){
+            index=SENTIMENT_COLORS.length-1;
+        }
+        state.setColorIndex(index);
+        state.setColor(SENTIMENT_COLORS[index]);
+
     }
 
     @Override

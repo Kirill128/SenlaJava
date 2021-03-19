@@ -18,6 +18,6 @@ public class State {
     private List<Polygon> polygons;
     private String color;
     private double sentiment;
-
+    private int colorIndex;
 
 }
