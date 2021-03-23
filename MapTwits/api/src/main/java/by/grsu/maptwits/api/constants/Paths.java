@@ -1,7 +1,7 @@
 package by.grsu.maptwits.api.constants;
 
 public enum Paths {
-    TWITS_PATH("/home/kirill/Programming/SenlaJava/MapTwits/fileworker/src/main/resources/high_school_tweets2014.txt"),
+    TWITS_PATH("/home/kirill/Programming/SenlaJava/MapTwits/fileworker/src/main/resources/weekend_tweets2014.txt"),
     STATES_PATH("/home/kirill/Programming/SenlaJava/MapTwits/fileworker/src/main/resources/states.json"),
     SENTIMENTS_PATH("/home/kirill/Programming/SenlaJava/MapTwits/fileworker/src/main/resources/sentiments.csv");
 

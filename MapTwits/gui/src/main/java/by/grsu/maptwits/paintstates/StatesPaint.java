@@ -73,42 +73,42 @@ public class StatesPaint extends Application {
         Scene scene=new Scene(group,1920,1080);
         scene.setFill(Color.web("#fadada"));
 //------------------------Bar Chart---------------------
-        List<Integer> allCountOfSameSentiments=new ArrayList<>(11);
-        for(int i=0;i<11;i++)allCountOfSameSentiments.add(0);
-        for(State s : states){
-            allCountOfSameSentiments.set(s.getColorIndex(), allCountOfSameSentiments.get(s.getColorIndex())+1);
-        }
-
-        CategoryAxis x=new CategoryAxis();
-        x.setLabel("Sentiment Ranges");
-        NumberAxis y=new NumberAxis();
-        y.setLabel("States Count");
-
-        BarChart barChart=new BarChart(x,y);
-
-        XYChart.Series series=new XYChart.Series();
-        List<XYChart.Data> datas=new ArrayList<>();
-        for(int i=-50;i<=50;i+=10){
-
-            int index=i/10+5;
-            XYChart.Data data=new XYChart.Data(String.valueOf(i),allCountOfSameSentiments.get(index));
-            series.getData().add(data);
-
-            datas.add(data);
-        }
-        barChart.getData().add(series);
-
-
-
-        Group group1=new Group(barChart);
-        Scene scene1=new Scene(group1,1920,1080);
-
-        int index=0;
-        for(XYChart.Data d: datas){
-            d.getNode().setStyle("-fx-background-color:"+StatesService.SENTIMENT_COLORS[index++]+";");
-        }
+//        List<Integer> allCountOfSameSentiments=new ArrayList<>(11);
+//        for(int i=0;i<11;i++)allCountOfSameSentiments.add(0);
+//        for(State s : states){
+//            allCountOfSameSentiments.set(s.getColorIndex(), allCountOfSameSentiments.get(s.getColorIndex())+1);
+//        }
+//
+//        CategoryAxis x=new CategoryAxis();
+//        x.setLabel("Sentiment Ranges");
+//        NumberAxis y=new NumberAxis();
+//        y.setLabel("States Count");
+//
+//        BarChart barChart=new BarChart(x,y);
+//
+//        XYChart.Series series=new XYChart.Series();
+//        List<XYChart.Data> datas=new ArrayList<>();
+//        for(int i=-50;i<=50;i+=10){
+//
+//            int index=i/10+5;
+//            XYChart.Data data=new XYChart.Data(String.valueOf(i),allCountOfSameSentiments.get(index));
+//            series.getData().add(data);
+//
+//            datas.add(data);
+//        }
+//        barChart.getData().add(series);
+//
+//
+//
+//        Group group1=new Group(barChart);
+//        Scene scene1=new Scene(group1,1920,1080);
+//
+//        int index=0;
+//        for(XYChart.Data d: datas){
+//            d.getNode().setStyle("-fx-background-color:"+StatesService.SENTIMENT_COLORS[index++]+";");
+//        }
 //--------------------------------------------------------
-        stage.setScene(scene1);
+        stage.setScene(scene);
         stage.show();
     }
 
