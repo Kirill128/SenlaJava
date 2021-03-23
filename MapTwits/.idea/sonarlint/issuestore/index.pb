@@ -59,5 +59,3 @@ Gapi/src/main/java/by/grsu/maptwits/api/fileworker/ISentimentReader.java,3/6/36
 MapTwits.iml,c/d/cdf56a624dc4ece89a929a70b2c325db619f41e7
 p
 @rest/src/main/java/by/grsu/maptwits/api/rest/TwitController.java,1/7/178e1d41ef2d5470b40c4ae41a48958b27e60030
-m
-=gui/src/main/java/by/grsu/maptwits/paintGisto/PaintGisto.java,c/8/c845155008635f52f5e5f58d591bcc4d8c61426d
