@@ -1,14 +1,28 @@
 
+<<<<<<< HEAD
 c
 java:S1128"FRemove this unused import 'by.grsu.maptwits.api.service.ITwitService'.(ÍúÓï8ä‘®¬„/
 v
 java:S2293+"YReplace the type specification in this constructor call with the diamond operator ("<>").(ËƒøÂ8À†´È„/
+=======
+K
+java:S1481W")Remove this unused "math" local variable.(¤Æ´øÿÿÿÿ8üåşÈ„/
+v
+java:S2293+"YReplace the type specification in this constructor call with the diamond operator ("<>").(ËƒøÂ8À†´È„/
+{
+java:S1488#"^Immediately return this expression instead of assigning it to the temporary variable "states".( ğ¨8À†´È„/
+>>>>>>> 38d07f0da96ea47a245ad704256239126876bb74
 ]	java:S125$"<This block of commented-out lines of code should be removed.(ÁÜ¶ºúÿÿÿÿ8À†´È„/
 ?
 java:S2386"Make this member "protected".(ãÙ¿•üÿÿÿÿ8¦ıÙ®„/
 {
 java:S2293B"YReplace the type specification in this constructor call with the diamond operator ("<>").(‰ÑùÊıÿÿÿÿ8À†´È„/
+<<<<<<< HEAD
 K
 java:S1481W")Remove this unused "math" local variable.(¤Æ´øÿÿÿÿ8üåşÈ„/
 {
 java:S1488#"^Immediately return this expression instead of assigning it to the temporary variable "states".( ğ¨8À†´È„/
+=======
+c
+java:S1128"FRemove this unused import 'by.grsu.maptwits.api.service.ITwitService'.(ÍúÓï8ä‘®¬„/
+>>>>>>> 38d07f0da96ea47a245ad704256239126876bb74

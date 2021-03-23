@@ -1,5 +1,10 @@
 
 H
 java:S1135,"2Complete the task associated to this TODO comment.(ò™–½
+<<<<<<< HEAD
 S	java:S106$"9Replace this use of System.out or System.err by a logger.(±ÛÔÈûÿÿÿÿ
 N	java:S106&"9Replace this use of System.out or System.err by a logger.(¼Ú¡ï
+=======
+N	java:S106&"9Replace this use of System.out or System.err by a logger.(¼Ú¡ï
+S	java:S106$"9Replace this use of System.out or System.err by a logger.(±ÛÔÈûÿÿÿÿ
+>>>>>>> 38d07f0da96ea47a245ad704256239126876bb74

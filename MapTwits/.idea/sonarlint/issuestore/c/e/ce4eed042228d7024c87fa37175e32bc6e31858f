@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 N
 java:S1481.",Remove this unused "polyNum" local variable.(äÇ´îøÿÿÿÿ8Ø¨æÂ/
 Q
@@ -8,3 +9,29 @@ Z	java:S106B"9Replace this use of System.out or System.err by a logger.(ãÑ­£üÿ
 J
 java:S1604?"(Make this anonymous inner class a lambda(îÆèÎıÿÿÿÿ8¬›Ü´„/
 X	java:S125L"<This block of commented-out lines of code should be removed.(Ä¤«†8ïîÁö„/
+=======
+L
+java:S3740Y"/Provide the parametrized type for this generic.(õë–ó8õ¦ãĞ„/
+L
+java:S3740Z"/Provide the parametrized type for this generic.(¹Š®Œ8†´áÑ„/
+L
+java:S3740Y"/Provide the parametrized type for this generic.(õë–ó8õ¦ãĞ„/
+Q
+java:S3740W"/Provide the parametrized type for this generic.(Ãòäöúÿÿÿÿ8™®Ğ„/
+Q
+java:S3740^"/Provide the parametrized type for this generic.(÷ˆÕ¤ûÿÿÿÿ8™®Ğ„/
+Q
+java:S3740W"/Provide the parametrized type for this generic.(Ãòäöúÿÿÿÿ8™®Ğ„/
+Z	java:S106B"9Replace this use of System.out or System.err by a logger.(ãÑ­£üÿÿÿÿ8¬›Ü´„/
+Q
+java:S3740k"/Provide the parametrized type for this generic.(âÿôÃùÿÿÿÿ8ıÙåÑ„/
+Z	java:S106C"9Replace this use of System.out or System.err by a logger.(ŞøÁûÿÿÿÿ8¬›Ü´„/
+Q
+java:S1611C"/Remove the parentheses around the "a" parameter(ŞøÁûÿÿÿÿ8¬›Ü´„/
+Q
+java:S3740^"/Provide the parametrized type for this generic.(÷ˆÕ¤ûÿÿÿÿ8™®Ğ„/
+N
+java:S1481.",Remove this unused "polyNum" local variable.(äÇ´îøÿÿÿÿ8Ø¨æÂ/
+J
+java:S1604?"(Make this anonymous inner class a lambda(îÆèÎıÿÿÿÿ8¬›Ü´„/
+>>>>>>> 38d07f0da96ea47a245ad704256239126876bb74
