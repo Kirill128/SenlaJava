@@ -23,6 +23,14 @@
             <version>1.18.18</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+            <version>16-ea+7</version>
+        </dependency>
+
+
     </dependencies>
+
 
 </project>
