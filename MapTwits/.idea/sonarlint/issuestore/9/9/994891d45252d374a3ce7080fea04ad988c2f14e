@@ -1,10 +1,0 @@
-
-?
-java:S2386"Make this member "protected".(ãÙ¿•üÿÿÿÿ8¦ıÙ®„/
-K
-java:S1481W")Remove this unused "math" local variable.(¤Æ´øÿÿÿÿ8üåşÈ„/
-{
-java:S1488#"^Immediately return this expression instead of assigning it to the temporary variable "states".( ğ¨8À†´È„/
-c
-java:S1128"FRemove this unused import 'by.grsu.maptwits.api.service.ITwitService'.(ÍúÓï8ä‘®¬„/
-]	java:S125$"<This block of commented-out lines of code should be removed.(ÁÜ¶ºúÿÿÿÿ8À†´È„/
